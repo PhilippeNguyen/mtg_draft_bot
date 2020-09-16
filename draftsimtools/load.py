@@ -10,8 +10,6 @@ import re
 import numpy as np
 import pandas as pd
 from sklearn import preprocessing
-import torch
-from torch.utils.data.dataset import Dataset
 
 
 def create_set(path1, path2=None, alphabetical=True):
@@ -322,98 +320,98 @@ def collection_pack_to_x(collection, pack, le):
     x = torch.Tensor(x).reshape(1, -1) # Include batch dimension.
     return x
 
-#Drafts dataset class.
-class DraftDataset(Dataset):
-    """Defines a draft dataset in PyTorch."""
-    
-    def __init__(self, drafts_tensor, le):
-        """Initialization.
-        """
-        self.drafts_tensor = drafts_tensor
-        self.le = le
-        self.cards_in_set = len(self.le.classes_)
-        self.pack_size = int(self.drafts_tensor.shape[1]/3)
-        self.draft_size = self.pack_size*3
-        
-    def __getitem__(self, index):
-        """Return a training example.
-        """
-        #Grab information on current draft.
-        pick_num = index % self.draft_size #0-self.pack_size*3-1
-        draft_num = int((index - pick_num)/self.draft_size)
-        
-        #Generate.
-        x = self.create_new_x(pick_num, draft_num)
-        y = self.create_new_y(pick_num, draft_num)
-        return x, y
-    
-    def create_new_x(self, pick_num, draft_num):
-        """Generate x, input, as a row vector.
-        0:n     : collection vector
-                  x[i]=n -> collection has n copies of card i
-        n:2n    : pack vector
-                  0 -> card not in pack
-                  1 -> card in pack
-        Efficiency optimization possible. Iterative adds to numpy array.
-        """
-        #Initialize collection / cards in pack vector.
-        x = np.zeros([self.cards_in_set * 2], dtype = "int16")
-        
-        #Fill in collection vector excluding current pick (first half).
-        for n in self.drafts_tensor[draft_num, :pick_num, 0]:
-            x[n] += 1
-            
-        #Fill in pack vector.
-        cards_in_pack =  self.pack_size - pick_num%self.pack_size #Cards in current pack.
-        for n in self.drafts_tensor[draft_num, pick_num, :cards_in_pack]:
-            x[n + self.cards_in_set] = 1
-            
-        #Convert to Torch tensor.
-        x = torch.Tensor(x)
-        return x
-    
-    def create_new_y(self, pick_num, draft_num, not_in_pack=0.5):
-        """Generate y, a target pick row vector.
-        Picked card is assigned a value of 1.
-        Other cards are assigned a value of 0.
-        """
-        #Initialize target vector.
-        #y = np.array([0] * self.cards_in_set)
-        y = np.zeros([self.cards_in_set], dtype = "int16")
-            
-        #Add picked card.
-        y[self.drafts_tensor[draft_num, pick_num, 0]] = 1
-        #y = torch.Tensor(y, dtype=torch.int64) # Needed as target.
-        y = torch.tensor(y, dtype=torch.int64) # , device=device) # Use default.
-        return y
-    
-    def __len__(self):
-        return len(self.drafts_tensor) * self.draft_size
-
-def load_dataset(rating_path1, rating_path2, drafts_path):
-    """Create drafts tensor from drafts and set files."""
-    # Load the set. inputs
-    cur_set = create_set(rating_path1, rating_path2)
-    raw_drafts = load_drafts(drafts_path)
-    
-    # Fix commas. 
-    cur_set, raw_drafts = fix_commas(cur_set, raw_drafts)
-    
-    # Process drafts. 
-    drafts = process_drafts(raw_drafts)
-    
-    # Drop empty elements at end, if present. 
-    while len(drafts[-1]) == 0:
-        drafts = drafts[:-1]
-    
-    # Create a label encoder.
-    le = create_le(cur_set["Name"].values)
-    
-    # Create drafts tensor. 
-    drafts_tensor = drafts_to_tensor(drafts, le)
-    
-    # Create a dataset.
-    cur_dataset = DraftDataset(drafts_tensor, le)
-    
-    # Get the tensor
-    return cur_dataset, drafts_tensor, cur_set, le
+# #Drafts dataset class.
+# class DraftDataset(Dataset):
+#     """Defines a draft dataset in PyTorch."""
+#
+#     def __init__(self, drafts_tensor, le):
+#         """Initialization.
+#         """
+#         self.drafts_tensor = drafts_tensor
+#         self.le = le
+#         self.cards_in_set = len(self.le.classes_)
+#         self.pack_size = int(self.drafts_tensor.shape[1]/3)
+#         self.draft_size = self.pack_size*3
+#
+#     def __getitem__(self, index):
+#         """Return a training example.
+#         """
+#         #Grab information on current draft.
+#         pick_num = index % self.draft_size #0-self.pack_size*3-1
+#         draft_num = int((index - pick_num)/self.draft_size)
+#
+#         #Generate.
+#         x = self.create_new_x(pick_num, draft_num)
+#         y = self.create_new_y(pick_num, draft_num)
+#         return x, y
+#
+#     def create_new_x(self, pick_num, draft_num):
+#         """Generate x, input, as a row vector.
+#         0:n     : collection vector
+#                   x[i]=n -> collection has n copies of card i
+#         n:2n    : pack vector
+#                   0 -> card not in pack
+#                   1 -> card in pack
+#         Efficiency optimization possible. Iterative adds to numpy array.
+#         """
+#         #Initialize collection / cards in pack vector.
+#         x = np.zeros([self.cards_in_set * 2], dtype = "int16")
+#
+#         #Fill in collection vector excluding current pick (first half).
+#         for n in self.drafts_tensor[draft_num, :pick_num, 0]:
+#             x[n] += 1
+#
+#         #Fill in pack vector.
+#         cards_in_pack =  self.pack_size - pick_num%self.pack_size #Cards in current pack.
+#         for n in self.drafts_tensor[draft_num, pick_num, :cards_in_pack]:
+#             x[n + self.cards_in_set] = 1
+#
+#         #Convert to Torch tensor.
+#         x = torch.Tensor(x)
+#         return x
+#
+#     def create_new_y(self, pick_num, draft_num, not_in_pack=0.5):
+#         """Generate y, a target pick row vector.
+#         Picked card is assigned a value of 1.
+#         Other cards are assigned a value of 0.
+#         """
+#         #Initialize target vector.
+#         #y = np.array([0] * self.cards_in_set)
+#         y = np.zeros([self.cards_in_set], dtype = "int16")
+#
+#         #Add picked card.
+#         y[self.drafts_tensor[draft_num, pick_num, 0]] = 1
+#         #y = torch.Tensor(y, dtype=torch.int64) # Needed as target.
+#         y = torch.tensor(y, dtype=torch.int64) # , device=device) # Use default.
+#         return y
+#
+#     def __len__(self):
+#         return len(self.drafts_tensor) * self.draft_size
+#
+# def load_dataset(rating_path1, rating_path2, drafts_path):
+#     """Create drafts tensor from drafts and set files."""
+#     # Load the set. inputs
+#     cur_set = create_set(rating_path1, rating_path2)
+#     raw_drafts = load_drafts(drafts_path)
+#
+#     # Fix commas.
+#     cur_set, raw_drafts = fix_commas(cur_set, raw_drafts)
+#
+#     # Process drafts.
+#     drafts = process_drafts(raw_drafts)
+#
+#     # Drop empty elements at end, if present.
+#     while len(drafts[-1]) == 0:
+#         drafts = drafts[:-1]
+#
+#     # Create a label encoder.
+#     le = create_le(cur_set["Name"].values)
+#
+#     # Create drafts tensor.
+#     drafts_tensor = drafts_to_tensor(drafts, le)
+#
+#     # Create a dataset.
+#     cur_dataset = DraftDataset(drafts_tensor, le)
+#
+#     # Get the tensor
+#     return cur_dataset, drafts_tensor, cur_set, le

@@ -5,7 +5,6 @@ import os
 import pandas as pd
 import pickle
 from sklearn import preprocessing
-from tqdm import tqdm
 from os.path import join as pjoin
 from functools import partial
 import multiprocessing
@@ -46,6 +45,7 @@ if __name__ == '__main__':
 
     
     #need to combine csvs in order to process data
+    print('loading data')
     raw_drafts = ''
     for data_path in (train_path,test_path):
         cur_draft = ds.load_drafts(data_path)

@@ -42,7 +42,6 @@ if __name__ == '__main__':
         help=("batch_size ")
     )
     args = parser.parse_args()
-    data_folder = args.data_folder
     batch_size = args.batch_size
     train_pkl = args.train_pkl
     test_pkl = args.test_pkl
