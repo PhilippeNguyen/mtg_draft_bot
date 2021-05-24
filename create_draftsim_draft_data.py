@@ -20,7 +20,7 @@ if __name__ == '__main__':
     parser.add_argument(
         "--data_folder", action="store", dest="data_folder",
         required=True,
-        help=("path to the data_folder ")
+        help=("path to the data_folder (as downloaded from draftsim)")
     )
     parser.add_argument(
         "--train_split", action="store", dest="train_split",
@@ -57,8 +57,8 @@ if __name__ == '__main__':
 
     cur_set.to_csv(standardized_output,
                    sep="\t", index=False)
-    le = ds.create_le(cur_set["Name"].values)
-    draft_to_tensor_func = partial(ds.draft_to_matrix,le=le)
+    label_encoder = ds.create_le(cur_set["Name"].values)
+    draft_to_tensor_func = partial(ds.draft_to_matrix,le=label_encoder)
 
     print('converting to tensor, may take awhile')
     draft_tensor = pool.map(draft_to_tensor_func,drafts)

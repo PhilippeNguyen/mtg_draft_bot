@@ -27,54 +27,48 @@ if __name__ == '__main__':
         help=("path to the test_pkl ")
     )
     parser.add_argument(
+        "--standard_rating_tsv", action="store", dest="standard_rating_tsv",
+        required=True,
+        help=("path to the standard_rating_tsv (standardized_m19_rating.tsv) ")
+    )
+    parser.add_argument(
         "--output_name", action="store", dest="output_name",
         required=True,
         help=("name of the output hdf5 file ")
     )
     parser.add_argument(
         "--batch_size", action="store", dest="batch_size",
-        default=100,type=int,
+        default=32,type=int,
         help=("batch_size ")
-    )
-    parser.add_argument(
-        "--train_fraction", action="store", dest="train_fraction",
-        default=0.5,type=float,
-        help=("fraction of the training set to go through per epoch")
     )
     args = parser.parse_args()
     batch_size = args.batch_size
     train_pkl = args.train_pkl
     test_pkl = args.test_pkl
     output_name = args.output_name
-    train_fraction = args.train_fraction
-    if train_fraction >1:
-        raise ValueError("train_fraction must be less than 1")
+
+    standardized_output = args.standard_rating_tsv
+    m19_set = pd.read_csv(standardized_output, delimiter="\t")
+    m19_set["Color Vector"] = [eval(s) for s in m19_set["Color Vector"]]
+    le = ds.create_le(m19_set["Name"].values)
+    
     
     train_data = pickle.load(open(train_pkl,'rb'))
     test_data = pickle.load(open(test_pkl,'rb'))
 
-
-    train_processor = utils.get_processor(train_data)
-    test_processor = utils.get_processor(test_data)
-
-    if train_processor.get_set_size() != test_processor.get_set_size():
-        raise Exception("""Computed number of cards in the set is different for train and test data. 
-                            Num cards in set (train): {}, 
-                            Num cards in set (test): {}, 
-                            """.format(train_processor.get_set_size(),
-                                        test_processor.get_set_size()))
-    
-    num_train = len(train_processor)
-    num_test = len(test_processor)
-    train_steps = (num_train*train_fraction) // batch_size
+    num_train = train_data.shape[0]
+    num_test = test_data.shape[0]
+    train_steps = num_train // batch_size
     test_steps = num_test // batch_size
-    train_dataset = tf.data.Dataset.from_generator(train_processor.get_iter,
+
+    train_dataset = tf.data.Dataset.from_generator(utils.DraftFormatProcessor(train_data, len(le.classes_)).get_iter,
                                                      output_types=(tf.int16,tf.int16))
-    test_dataset = tf.data.Dataset.from_generator(test_processor.get_iter,
+    test_dataset = tf.data.Dataset.from_generator(utils.DraftFormatProcessor(test_data, len(le.classes_)).get_iter,
                                                     output_types=(tf.int16, tf.int16))
 
-
-    input_size = train_processor.get_set_size()*2
+    st = utils.create_set_tensor(m19_set)
+    set_size,feature_size = st.shape
+    input_size = set_size*2
     model = nn_utils.build_model(input_size)
 
     loss = tf.keras.losses.CategoricalCrossentropy(

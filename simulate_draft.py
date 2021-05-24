@@ -1,11 +1,11 @@
 
 import pandas as pd
 import pickle
-from utils import DraftCreator
 from nn_utils import NNBot
 import argparse
 import keras
 import sys
+from set_utils import load_draft_creator
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(
@@ -17,21 +17,15 @@ if __name__ == '__main__':
         help=("path to the model_hdf5 ")
     )
     parser.add_argument(
-        "--standard_rating_tsv", action="store", dest="standard_rating_tsv",
+        "--set_code", action="store", dest="set_code",
         required=True,
-        help=("path to the standard_rating_tsv (standardized_m19_rating.tsv) ")
-    )
-    parser.add_argument(
-        "--land_rating_tsv", action="store", dest="land_rating_tsv",
-        required=True,
-        help=("path to the land_tsv (m19_land_rating.tsv) ")
+        help=("3-symbol code for the set, (only 'm19' and 'stx' available atm) ")
     )
 
     args = parser.parse_args()
     model = keras.models.load_model(args.model_hdf5)
-    set_df = pd.read_csv(args.standard_rating_tsv,delimiter="\t")
-    land_df = pd.read_csv(args.land_rating_tsv,delimiter="\t")
-    draft_coord = DraftCreator(set_df,land_df)
+    set_code = args.set_code
+    draft_coord = load_draft_creator(set_code)
 
     num_bots = 8
     num_packs = 3
@@ -41,7 +35,7 @@ if __name__ == '__main__':
     bot_list = []
     for _ in range(num_bots):
         nnbot = NNBot(keras_model=model,
-                      set_size=len(set_df),
+                      set_size=draft_coord.get_set_size(),
                       pick_mode='max'
                       )
         bot_list.append(nnbot)
@@ -71,6 +65,6 @@ if __name__ == '__main__':
 
     for bot_idx,nnbot in enumerate(bot_list):
         print()
-        print('Bot Num {}'.format(bot_idx))
+        print('Bot_Num: {}'.format(bot_idx))
 
         draft_coord.read_bot_picks(nnbot.picks)

@@ -8,7 +8,7 @@ repo is similar to the neural network model in the paper. I use tensorflow-keras
 Currently, code here is just for training the NN model and running a simulation draft with 8
 copies of that model. You can see an example of the simulation below.
 
-May add more if new data comes out, or any ideas come to mind.
+Currently supported sets: M19 and STX, will add more if data becomes available.
 
 ## Requirements
 The versions are not hard requirements. They are just what I use.
