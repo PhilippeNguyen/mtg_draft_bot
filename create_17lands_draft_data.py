@@ -23,18 +23,13 @@ if __name__ == '__main__':
         help=("path to the data_folder (as downloaded from 17lands)")
     )
     parser.add_argument(
-        "--card_name_csv", action="store", dest="card_name_csv",
-        required=True,
-        help=("path to the card_name_csv")
-    )
-    parser.add_argument(
         "--train_split", action="store", dest="train_split",
         default=0.8,type=float,
         help=("fraction of data to use for training ")
     )
     args = parser.parse_args()
 
-    card_name_df = pd.read_csv(args.card_name_csv)
+    # card_name_df = pd.read_csv(args.card_name_csv)
 
     print('parsing data...')
     data,target,card_name_df = seventeen_lands.parse_data_csv(args.data_csv)
