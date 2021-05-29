@@ -1,266 +1,266 @@
-Name	Casting Cost 1	Casting Cost 2	Card Type	Rarity	Rating	Color Vector
-Abnormal_Endurance	1B	none	Instant	C	2.2	[0, 0, 1, 0, 0]
-Act_of_Treason	2R	none	Spell	C	2.0	[0, 0, 0, 1, 0]
-Aegis_of_the_Heavens	1W	none	Instant	U	1.9	[1, 0, 0, 0, 0]
-Aerial_Engineer	2UW	none	Creature	U	3.0	[1, 1, 0, 0, 0]
-Aether_Tunnel	1U	none	Spell	U	2.0	[0, 1, 0, 0, 0]
-Aethershield_Artificer	3W	none	Creature	U	2.4	[1, 0, 0, 0, 0]
-Ajani's_Last_Stand	2WW	none	Spell	R	3.1	[2, 0, 0, 0, 0]
-Ajani's_Pridemate	1W	none	Creature	U	3.0	[1, 0, 0, 0, 0]
-Ajani's_Welcome	W	none	Spell	U	1.7	[1, 0, 0, 0, 0]
-Ajani_Adversary_of_Tyrants	2WW	none	Planeswalker	M	4.4	[2, 0, 0, 0, 0]
-Alpine_Moon	R	none	Spell	R	0.5	[0, 0, 0, 1, 0]
-Amulet_of_Safekeeping	2	none	Spell	R	1.4	[0, 0, 0, 0, 0]
-Angel_of_the_Dawn	4W	none	Creature	C	2.9	[1, 0, 0, 0, 0]
-Anticipate	1U	none	Spell	C	2.1	[0, 1, 0, 0, 0]
-Apex_of_Power	7RRR	none	Spell	M	1.0	[0, 0, 0, 3, 0]
-Arcades_the_Strategist	1GWU	none	Creature	M	3.4	[1, 1, 0, 0, 1]
-Arcane_Encyclopedia	3	none	Spell	U	2.4	[0, 0, 0, 0, 0]
-Aven_Wind_Mage	2U	none	Creature	C	2.4	[0, 1, 0, 0, 0]
-Aviation_Pioneer	2U	none	Creature	C	2.5	[0, 1, 0, 0, 0]
-Banefire	XR	none	Spell	R	4.1	[0, 0, 0, 1, 0]
-Blanchwood_Armor	2G	none	Spell	U	2.3	[0, 0, 0, 0, 1]
-Blood_Divination	3B	none	Spell	U	2.3	[0, 0, 1, 0, 0]
-Boggart_Brute	2R	none	Creature	C	2.4	[0, 0, 0, 1, 0]
-Bogstomper	4BB	none	Creature	C	1.9	[0, 0, 2, 0, 0]
-Bone_Dragon	3BB	none	Creature	M	3.9	[0, 0, 2, 0, 0]
-Bone_to_Ash	2UU	none	Instant	U	2.1	[0, 2, 0, 0, 0]
-Brawl-Bash_Ogre	2RB	none	Creature	U	3.0	[0, 0, 1, 1, 0]
-Bristling_Boar	3G	none	Creature	C	2.3	[0, 0, 0, 0, 1]
-Cancel	1UU	none	Instant	C	2.0	[0, 2, 0, 0, 0]
-Catalyst_Elemental	2R	none	Creature	C	1.9	[0, 0, 0, 1, 0]
-Cavalry_Drillmaster	1W	none	Creature	C	2.4	[1, 0, 0, 0, 0]
-Centaur_Courser	2G	none	Creature	C	2.4	[0, 0, 0, 0, 1]
-Chaos_Wand	3	none	Spell	R	2.2	[0, 0, 0, 0, 0]
-Child_of_Night	1B	none	Creature	C	2.0	[0, 0, 1, 0, 0]
-Chromium_the_Mutable	4WUB	none	Creature	M	4.6	[1, 1, 1, 0, 0]
-Cinder_Barrens	0	BR	Land	C	2.3	[0, 0, 0.5, 0.5, 0]
-Cleansing_Nova	3WW	none	Spell	R	3.8	[2, 0, 0, 0, 0]
-Colossal_Dreadmaw	4GG	none	Creature	C	2.3	[0, 0, 0, 0, 2]
-Colossal_Majesty	2G	none	Spell	U	2.3	[0, 0, 0, 0, 1]
-Crash_Through	R	none	Spell	C	1.8	[0, 0, 0, 1, 0]
-Crucible_of_Worlds	3	none	Spell	M	1.5	[0, 0, 0, 0, 0]
-Daggerback_Basilisk	2G	none	Creature	C	2.3	[0, 0, 0, 0, 1]
-Dark-Dweller_Oracle	1R	none	Creature	R	2.9	[0, 0, 0, 1, 0]
-Daybreak_Chaplain	1W	none	Creature	C	2.1	[1, 0, 0, 0, 0]
-Death_Baron	1BB	none	Creature	R	3.3	[0, 0, 2, 0, 0]
-Declare_Dominance	3GG	none	Spell	U	2.7	[0, 0, 0, 0, 2]
-Demanding_Dragon	3RR	none	Creature	R	4.1	[0, 0, 0, 2, 0]
-Demon_of_Catastrophes	4BB	none	Creature	R	4.2	[0, 0, 2, 0, 0]
-Departed_Deckhand	1U	none	Creature	U	3.1	[0, 1, 0, 0, 0]
-Desecrated_Tomb	3	none	Spell	R	1.6	[0, 0, 0, 0, 0]
-Detection_Tower	0	none	Land	R	1.0	[0, 0, 0, 0, 0]
-Diamond_Mare	2	none	Creature	U	2.3	[0, 0, 0, 0, 0]
-Diregraf_Ghoul	B	none	Creature	U	2.1	[0, 0, 1, 0, 0]
-Dismissive_Pyromancer	1R	none	Creature	R	3.5	[0, 0, 0, 1, 0]
-Disperse	1U	none	Instant	C	2.4	[0, 1, 0, 0, 0]
-Divination	2U	none	Spell	C	2.3	[0, 1, 0, 0, 0]
-Djinn_of_Wishes	3UU	none	Creature	R	3.9	[0, 2, 0, 0, 0]
-Doomed_Dissenter	1B	none	Creature	C	2.2	[0, 0, 1, 0, 0]
-Doublecast	RR	none	Spell	U	2.0	[0, 0, 0, 2, 0]
-Draconic_Disciple	1RG	none	Creature	U	3.1	[0, 0, 0, 1, 1]
-Dragon's_Hoard	3	none	Spell	R	2.0	[0, 0, 0, 0, 0]
-Dragon_Egg	2R	none	Creature	U	2.3	[0, 0, 0, 1, 0]
-Druid_of_Horns	3G	none	Creature	U	2.2	[0, 0, 0, 0, 1]
-Druid_of_the_Cowl	1G	none	Creature	C	2.9	[0, 0, 0, 0, 1]
-Dryad_Greenseeker	1G	none	Creature	U	3.6	[0, 0, 0, 0, 1]
-Duress	B	none	Spell	C	1.8	[0, 0, 1, 0, 0]
-Dwarven_Priest	3W	none	Creature	C	2.2	[1, 0, 0, 0, 0]
-Dwindle	2U	none	Spell	C	2.5	[0, 1, 0, 0, 0]
-Electrify	3R	none	Removal	C	2.9	[0, 0, 0, 1, 0]
-Elvish_Clancaller	GG	none	Creature	R	2.2	[0, 0, 0, 0, 2]
-Elvish_Rejuvenator	2G	none	Creature	C	2.2	[0, 0, 0, 0, 1]
-Enigma_Drake	1UR	none	Creature	U	3.0	[0, 1, 0, 1, 0]
-Epicure_of_Blood	4B	none	Creature	C	2.3	[0, 0, 1, 0, 0]
-Essence_Scatter	1U	none	Instant	C	2.8	[0, 1, 0, 0, 0]
-Exclusion_Mage	2U	none	Creature	U	3.1	[0, 1, 0, 0, 0]
-Explosive_Apparatus	1	none	Spell	C	2.1	[0, 0, 0, 0, 0]
-Fell_Specter	3B	none	Creature	U	2.5	[0, 0, 1, 0, 0]
-Field_Creeper	2	none	Creature	C	1.8	[0, 0, 0, 0, 0]
-Fiery_Finish	4RR	none	Removal	U	2.4	[0, 0, 0, 2, 0]
-Fire_Elemental	3RR	none	Creature	C	2.0	[0, 0, 0, 2, 0]
-Forest	0	G	Land	C	-1.0	[0, 0, 0, 0, 0.5]
-Forsaken_Sanctuary	0	WB	Land	C	2.3	[0.5, 0, 0.5, 0, 0]
-Foul_Orchard	0	GB	Land	C	2.3	[0, 0, 0.5, 0, 0.5]
-Fountain_of_Renewal	1	none	Spell	U	2.3	[0, 0, 0, 0, 0]
-Fraying_Omnipotence	3BB	none	Spell	R	1.5	[0, 0, 2, 0, 0]
-Frilled_Sea_Serpent	4UU	none	Creature	C	2.1	[0, 2, 0, 0, 0]
-Gallant_Cavalry	3W	none	Creature	C	2.5	[1, 0, 0, 0, 0]
-Gargoyle_Sentinel	3	none	Creature	U	2.5	[0, 0, 0, 0, 0]
-Gearsmith_Guardian	5	U	Creature	C	2.3	[0, 0.5, 0, 0, 0]
-Gearsmith_Prodigy	U	none	Creature	C	1.8	[0, 1, 0, 0, 0]
-Ghastbark_Twins	5GG	none	Creature	U	2.3	[0, 0, 0, 0, 2]
-Ghirapur_Guide	2G	none	Creature	U	2.3	[0, 0, 0, 0, 1]
-Ghostform	1U	none	Spell	C	1.8	[0, 1, 0, 0, 0]
-Giant_Spider	3G	none	Creature	C	2.3	[0, 0, 0, 0, 1]
-Gift_of_Paradise	2G	none	Spell	U	2.3	[0, 0, 0, 0, 1]
-Gigantosaurus	GGGGG	none	Creature	R	2.0	[0, 0, 0, 0, 5]
-Goblin_Instigator	1R	none	Creature	C	2.3	[0, 0, 0, 1, 0]
-Goblin_Motivator	R	none	Creature	C	1.9	[0, 0, 0, 1, 0]
-Goblin_Trashmaster	2RR	none	Creature	R	3.3	[0, 0, 0, 2, 0]
-Goreclaw_Terror_of_Qal_Sisma	3G	none	Creature	R	3.7	[0, 0, 0, 0, 1]
-Gravedigger	3B	none	Creature	U	2.8	[0, 0, 1, 0, 0]
-Graveyard_Marshal	BB	none	Creature	R	3.5	[0, 0, 2, 0, 0]
-Greenwood_Sentinel	1G	none	Creature	C	1.9	[0, 0, 0, 0, 1]
-Guttersnipe	2R	none	Creature	U	2.4	[0, 0, 0, 1, 0]
-Havoc_Devils	2RR	none	Creature	C	2.2	[0, 0, 0, 2, 0]
-Herald_of_Faith	3WW	none	Creature	U	2.9	[2, 0, 0, 0, 0]
-Heroic_Reinforcements	2RW	none	Spell	U	3.2	[1, 0, 0, 1, 0]
-Hieromancer's_Cage	3W	none	Removal	U	3.4	[1, 0, 0, 0, 0]
-Highland_Game	1G	none	Creature	C	1.9	[0, 0, 0, 0, 1]
-Highland_Lake	0	UR	Land	C	2.3	[0, 0.5, 0, 0.5, 0]
-Hired_Blade	2B	none	Creature	C	2.0	[0, 0, 1, 0, 0]
-Horizon_Scholar	5U	none	Creature	U	2.6	[0, 1, 0, 0, 0]
-Hostile_Minotaur	3R	none	Creature	C	2.1	[0, 0, 0, 1, 0]
-Hungering_Hydra	XG	none	Creature	R	3.2	[0, 0, 0, 0, 1]
-Infectious_Horror	3B	none	Creature	C	1.7	[0, 0, 1, 0, 0]
-Infernal_Reckoning	B	none	Removal	R	1.7	[0, 0, 1, 0, 0]
-Infernal_Scarring	1B	none	Spell	C	1.6	[0, 0, 1, 0, 0]
-Inferno_Hellion	3R	none	Creature	U	2.1	[0, 0, 0, 1, 0]
-Inspired_Charge	2WW	none	Instant	C	2.0	[2, 0, 0, 0, 0]
-Invoke_the_Divine	2W	none	Instant	C	1.9	[1, 0, 0, 0, 0]
-Isareth_the_Awakener	1BB	none	Creature	R	3.8	[0, 0, 2, 0, 0]
-Island	0	U	Land	C	-1.0	[0, 0.5, 0, 0, 0]
-Isolate	W	none	Removal	R	1.4	[1, 0, 0, 0, 0]
-Knight's_Pledge	2W	none	Spell	C	1.8	[1, 0, 0, 0, 0]
-Knight_of_the_Tusk	4WW	none	Creature	C	1.9	[2, 0, 0, 0, 0]
-Knightly_Valor	4W	none	Spell	U	2.8	[1, 0, 0, 0, 0]
-Lathliss_Dragon_Queen	4RR	none	Creature	R	4.5	[0, 0, 0, 2, 0]
-Lava_Axe	4R	none	Spell	C	1.9	[0, 0, 0, 1, 0]
-Lena_Selfless_Champion	4WW	none	Creature	R	3.9	[2, 0, 0, 0, 0]
-Leonin_Vanguard	W	none	Creature	U	2.0	[1, 0, 0, 0, 0]
-Leonin_Warleader	2WW	none	Creature	R	3.9	[2, 0, 0, 0, 0]
-Lich's_Caress	3BB	none	Removal	C	3.1	[0, 0, 2, 0, 0]
-Lightning_Mare	RR	none	Creature	U	2.4	[0, 0, 0, 2, 0]
-Lightning_Strike	1R	none	Removal	U	3.7	[0, 0, 0, 1, 0]
-Liliana's_Contract	3BB	none	Spell	R	2.6	[0, 0, 2, 0, 0]
-Liliana_Untouched_by_Death	2BB	none	Planeswalker	M	2.2	[0, 0, 2, 0, 0]
-Loxodon_Line_Breaker	2W	none	Creature	C	2.0	[1, 0, 0, 0, 0]
-Luminous_Bonds	2W	none	Removal	C	3.0	[1, 0, 0, 0, 0]
-Macabre_Waltz	1B	none	Spell	C	2.2	[0, 0, 1, 0, 0]
-Magistrate's_Scepter	3	none	Spell	R	1.5	[0, 0, 0, 0, 0]
-Make_a_Stand	2W	none	Instant	U	2.1	[1, 0, 0, 0, 0]
-Manalith	3	none	Spell	C	1.9	[0, 0, 0, 0, 0]
-Marauder's_Axe	2	none	Spell	C	2.2	[0, 0, 0, 0, 0]
-Meandering_River	0	WU	Land	C	2.3	[0.5, 0.5, 0, 0, 0]
-Mentor_of_the_Meek	2W	none	Creature	R	3.7	[1, 0, 0, 0, 0]
-Metamorphic_Alteration	1U	none	Spell	R	2.6	[0, 1, 0, 0, 0]
-Meteor_Golem	7	none	Creature	U	2.7	[0, 0, 0, 0, 0]
-Mighty_Leap	1W	none	Instant	C	2.0	[1, 0, 0, 0, 0]
-Militia_Bugler	2W	none	Creature	U	2.8	[1, 0, 0, 0, 0]
-Millstone	2	none	Spell	U	1.7	[0, 0, 0, 0, 0]
-Mind_Rot	2B	none	Spell	C	2.0	[0, 0, 1, 0, 0]
-Mirror_Image	1U	none	Creature	U	2.6	[0, 1, 0, 0, 0]
-Mistcaller	U	none	Creature	R	1.0	[0, 1, 0, 0, 0]
-Mountain	0	R	Land	C	-1.0	[0, 0, 0, 0.5, 0]
-Murder	1BB	none	Removal	U	3.8	[0, 0, 2, 0, 0]
-Mystic_Archaeologist	1U	none	Creature	R	3.5	[0, 1, 0, 0, 0]
-Naturalize	1G	none	Instant	C	1.8	[0, 0, 0, 0, 1]
-Nicol_Bolas_the_Ravager	1UBR	none	Creature	M	4.6	[0, 1, 1, 1, 0]
-Nightmare's_Thirst	B	none	Removal	U	2.4	[0, 0, 1, 0, 0]
-Novice_Knight	W	none	Creature	U	2.0	[1, 0, 0, 0, 0]
-Oakenform	2G	none	Spell	C	2.2	[0, 0, 0, 0, 1]
-Omenspeaker	1U	none	Creature	C	2.3	[0, 1, 0, 0, 0]
-Omniscience	7UUU	none	Spell	M	0.1	[0, 3, 0, 0, 0]
-Onakke_Ogre	2R	none	Creature	C	2.0	[0, 0, 0, 1, 0]
-One_with_the_Machine	3U	none	Spell	R	2.3	[0, 1, 0, 0, 0]
-Open_the_Graves	3BB	none	Spell	R	3.0	[0, 0, 2, 0, 0]
-Oreskos_Swiftclaw	1W	none	Creature	C	2.0	[1, 0, 0, 0, 0]
-Palladia-Mors_the_Ruiner	3RGW	none	Creature	M	4.5	[1, 0, 0, 1, 1]
-Patient_Rebuilding	3UU	none	Spell	R	4.0	[0, 2, 0, 0, 0]
-Pegasus_Courser	2W	none	Creature	C	2.6	[1, 0, 0, 0, 0]
-Pelakka_Wurm	4GGG	none	Creature	R	3.7	[0, 0, 0, 0, 3]
-Phylactery_Lich	BBB	none	Creature	R	2.2	[0, 0, 3, 0, 0]
-Plague_Mare	1BB	none	Creature	U	3.0	[0, 0, 2, 0, 0]
-Plains	0	W	Land	C	-1.0	[0.5, 0, 0, 0, 0]
-Plummet	1G	none	Removal	C	1.9	[0, 0, 0, 0, 1]
-Poison-Tip_Archer	2BG	none	Creature	U	3.0	[0, 0, 1, 0, 1]
-Prodigious_Growth	4GG	none	Spell	R	3.9	[0, 0, 0, 0, 2]
-Psychic_Corrosion	2U	none	Spell	U	2.2	[0, 1, 0, 0, 0]
-Psychic_Symbiont	4UB	none	Creature	U	3.0	[0, 1, 1, 0, 0]
-Rabid_Bite	1G	none	Removal	C	2.8	[0, 0, 0, 0, 1]
-Ravenous_Harpy	2B	none	Creature	U	2.6	[0, 0, 1, 0, 0]
-Reassembling_Skeleton	1B	none	Creature	U	2.6	[0, 0, 1, 0, 0]
-Reclamation_Sage	2G	none	Creature	U	2.6	[0, 0, 0, 0, 1]
-Recollect	2G	none	Spell	U	2.0	[0, 0, 0, 0, 1]
-Regal_Bloodlord	3WB	none	Creature	U	3.1	[1, 0, 1, 0, 0]
-Reliquary_Tower	0	none	Land	U	0.5	[0, 0, 0, 0, 0]
-Remorseful_Cleric	1W	none	Creature	R	2.7	[1, 0, 0, 0, 0]
-Resplendent_Angel	1WW	none	Creature	M	4.3	[2, 0, 0, 0, 0]
-Revitalize	1W	none	Instant	C	1.8	[1, 0, 0, 0, 0]
-Rhox_Oracle	4G	none	Creature	C	2.3	[0, 0, 0, 0, 1]
-Rise_from_the_Grave	4B	none	Spell	U	2.5	[0, 0, 1, 0, 0]
-Rogue's_Gloves	2	none	Spell	U	2.1	[0, 0, 0, 0, 0]
-Root_Snare	1G	none	Instant	C	1.7	[0, 0, 0, 0, 1]
-Runic_Armasaur	1GG	none	Creature	R	2.8	[0, 0, 0, 0, 2]
-Rupture_Spire	0	none	Land	U	2.1	[0, 0, 0, 0, 0]
-Rustwing_Falcon	W	none	Creature	C	1.9	[1, 0, 0, 0, 0]
-Sai_Master_Thopterist	2U	none	Creature	R	3.0	[0, 1, 0, 0, 0]
-Salvager_of_Secrets	3UU	none	Creature	C	2.5	[0, 2, 0, 0, 0]
-Sarkhan's_Unsealing	3R	none	Spell	R	3.8	[0, 0, 0, 1, 0]
-Sarkhan_Fireblood	1RR	none	Planeswalker	M	3.3	[0, 0, 0, 2, 0]
-Satyr_Enchanter	1WG	none	Creature	U	2.6	[1, 0, 0, 0, 1]
-Scapeshift	2GG	none	Spell	M	1.5	[0, 0, 0, 0, 2]
-Scholar_of_Stars	3U	none	Creature	C	2.1	[0, 1, 0, 0, 0]
-Shield_Mare	1WW	none	Creature	U	2.5	[2, 0, 0, 0, 0]
-Shock	R	none	Removal	C	2.8	[0, 0, 0, 1, 0]
-Siegebreaker_Giant	3RR	none	Creature	U	2.6	[0, 0, 0, 2, 0]
-Sift	3U	none	Spell	U	2.7	[0, 1, 0, 0, 0]
-Sigiled_Sword_of_Valeron	3	none	Spell	R	3.9	[0, 0, 0, 0, 0]
-Skeleton_Archer	3B	none	Creature	C	2.3	[0, 0, 1, 0, 0]
-Skilled_Animator	2U	none	Creature	U	2.8	[0, 1, 0, 0, 0]
-Skymarch_Bloodletter	2B	none	Creature	C	2.4	[0, 0, 1, 0, 0]
-Skyrider_Patrol	2GU	none	Creature	U	3.2	[0, 1, 0, 0, 1]
-Skyscanner	3	none	Creature	C	2.5	[0, 0, 0, 0, 0]
-Sleep	2UU	none	Spell	U	3.0	[0, 2, 0, 0, 0]
-Smelt	R	none	Spell	C	1.8	[0, 0, 0, 1, 0]
-Snapping_Drake	3U	none	Creature	C	2.3	[0, 1, 0, 0, 0]
-Sovereign's_Bite	1B	none	Spell	C	1.6	[0, 0, 1, 0, 0]
-Sparktongue_Dragon	3RR	none	Creature	C	2.4	[0, 0, 0, 2, 0]
-Spit_Flame	2R	none	Removal	R	3.9	[0, 0, 0, 1, 0]
-Star-Crowned_Stag	3W	none	Creature	C	2.7	[1, 0, 0, 0, 0]
-Stitcher's_Supplier	B	none	Creature	U	1.9	[0, 0, 1, 0, 0]
-Stone_Quarry	0	RW	Land	C	2.3	[0.5, 0, 0, 0.5, 0]
-Strangling_Spores	3B	none	Removal	C	2.6	[0, 0, 1, 0, 0]
-Submerged_Boneyard	0	UB	Land	C	2.3	[0, 0.5, 0.5, 0, 0]
-Suncleanser	W	none	Creature	R	2.0	[1, 0, 0, 0, 0]
-Supreme_Phantom	1U	none	Creature	R	2.2	[0, 1, 0, 0, 0]
-Sure_Strike	1R	none	Instant	C	2.1	[0, 0, 0, 1, 0]
-Surge_Mare	UU	none	Creature	U	2.6	[0, 2, 0, 0, 0]
-Suspicious_Bookcase	2	none	Creature	U	2.3	[0, 0, 0, 0, 0]
-Swamp	0	B	Land	C	-1.0	[0, 0, 0.5, 0, 0]
-Switcheroo	4U	none	Spell	U	2.6	[0, 1, 0, 0, 0]
-Take_Vengeance	1W	none	Removal	C	2.4	[1, 0, 0, 0, 0]
-Talons_of_Wildwood	1G	none	Spell	C	2.0	[0, 0, 0, 0, 1]
-Tectonic_Rift	3R	none	Spell	U	1.9	[0, 0, 0, 1, 0]
-Tezzeret_Artifice_Master	3UU	none	Planeswalker	M	4.6	[0, 2, 0, 0, 0]
-Thorn_Lieutenant	1G	none	Creature	R	3.0	[0, 0, 0, 0, 1]
-Thornhide_Wolves	4G	none	Creature	C	2.2	[0, 0, 0, 0, 1]
-Thud	R	none	Removal	U	2.1	[0, 0, 0, 1, 0]
-Timber_Gorge	0	RG	Land	C	2.3	[0, 0, 0, 0.5, 0.5]
-Titanic_Growth	1G	none	Instant	C	2.2	[0, 0, 0, 0, 1]
-Tolarian_Scholar	2U	none	Creature	C	1.9	[0, 1, 0, 0, 0]
-Tormenting_Voice	1R	none	Spell	C	2.0	[0, 0, 0, 1, 0]
-Totally_Lost	4U	none	Instant	C	2.2	[0, 1, 0, 0, 0]
-Tranquil_Expanse	0	GW	Land	C	2.3	[0.5, 0, 0, 0, 0.5]
-Transmogrifying_Wand	3	none	Spell	R	3.1	[0, 0, 0, 0, 0]
-Trumpet_Blast	2R	none	Instant	C	1.9	[0, 0, 0, 1, 0]
-Trusty_Packbeast	2W	none	Creature	C	1.9	[1, 0, 0, 0, 0]
-Two-Headed_Zombie	3B	none	Creature	C	2.2	[0, 0, 1, 0, 0]
-Uncomfortable_Chill	2U	none	Instant	C	2.0	[0, 1, 0, 0, 0]
-Vaevictis_Asmadi_the_Dire	3BRG	none	Creature	M	4.3	[0, 0, 1, 1, 1]
-Valiant_Knight	3W	none	Creature	R	3.7	[1, 0, 0, 0, 0]
-Vampire_Neonate	B	none	Creature	C	2.4	[0, 0, 1, 0, 0]
-Vampire_Sovereign	3BB	none	Creature	U	3.5	[0, 0, 2, 0, 0]
-Viashino_Pyromancer	1R	none	Creature	C	2.0	[0, 0, 0, 1, 0]
-Vigilant_Baloth	3GG	none	Creature	U	2.9	[0, 0, 0, 0, 2]
-Vine_Mare	2GG	none	Creature	U	3.5	[0, 0, 0, 0, 2]
-Vivien's_Invocation	5GG	none	Spell	R	3.6	[0, 0, 0, 0, 2]
-Vivien_Reid	3GG	none	Planeswalker	M	4.4	[0, 0, 0, 0, 2]
-Volcanic_Dragon	4RR	none	Creature	U	2.8	[0, 0, 0, 2, 0]
-Volley_Veteran	3R	none	Creature	U	3.3	[0, 0, 0, 1, 0]
-Walking_Corpse	1B	none	Creature	C	1.8	[0, 0, 1, 0, 0]
-Wall_of_Mist	1U	none	Creature	C	2.1	[0, 1, 0, 0, 0]
-Wall_of_Vines	G	none	Creature	C	1.7	[0, 0, 0, 0, 1]
-Windreader_Sphinx	5UU	none	Creature	R	3.5	[0, 2, 0, 0, 0]
-Woodland_Stream	0	GU	Land	C	2.3	[0, 0.5, 0, 0, 0.5]
+Name	Casting Cost 1	Casting Cost 2	Card Type	Rarity	Rating	Color Vector	Image URL
+Abnormal_Endurance	1B	none	Instant	C	2.2	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/e/de2de2bd-9ba7-4b6f-94c2-dafb2011a48e.jpg?1562304790
+Act_of_Treason	2R	none	Spell	C	2.0	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/1/9160dde8-cd77-4967-a5f3-a676376c58f7.jpg?1562302975
+Aegis_of_the_Heavens	1W	none	Instant	U	1.9	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/5/0503c55d-74bb-4165-9273-127c01bb2214.jpg?1562300260
+Aerial_Engineer	2UW	none	Creature	U	3.0	[1, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/3/5314bae2-4930-4f8a-8a52-853bc3feb88f.jpg?1562302169
+Aether_Tunnel	1U	none	Spell	U	2.0	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/d/5d6178ed-6353-4733-81e1-7b3dc592c3bd.jpg?1562302252
+Aethershield_Artificer	3W	none	Creature	U	2.4	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/2/226f7c45-db9f-4d48-b575-4d2f1904c963.jpg?1562300805
+Ajani's_Last_Stand	2WW	none	Spell	R	3.1	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/a/1aebbb57-31b3-4289-815e-4f529e29f3ea.jpg?1562300738
+Ajani's_Pridemate	1W	none	Creature	U	3.0	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/f/2f717e04-c078-4696-9ed6-e973033d7be0.jpg?1562301224
+Ajani's_Welcome	W	none	Spell	U	1.7	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/9/c9045fcb-b633-4c35-8058-6234311551ae.jpg?1562304330
+Ajani_Adversary_of_Tyrants	2WW	none	Planeswalker	M	4.4	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/c/4c565076-5db2-47ea-8ee0-4a4fd7bb353d.jpg?1562302134
+Alpine_Moon	R	none	Spell	R	0.5	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/4/2435c810-2baf-4e3b-80ce-542b94694901.jpg?1584675370
+Amulet_of_Safekeeping	2	none	Spell	R	1.4	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/4/d45ac8dc-281f-4257-9658-80af65a0295b.jpg?1562304406
+Angel_of_the_Dawn	4W	none	Creature	C	2.9	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/f/4/f4bae0e4-1143-4dc4-afb1-e6b4201ff101.jpg?1562305274
+Anticipate	1U	none	Spell	C	2.1	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/0/a07b1d89-1e6a-4e95-be89-1f03182fc470.jpg?1562303423
+Apex_of_Power	7RRR	none	Spell	M	1.0	[0, 0, 0, 3, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/8/c827bccf-38f9-4a7c-bd0e-038594a9f63b.jpg?1562304326
+Arcades_the_Strategist	1GWU	none	Creature	M	3.4	[1, 1, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/e/1e90c638-d4b2-4243-bbc4-1cc10516c40f.jpg?1562300781
+Arcane_Encyclopedia	3	none	Spell	U	2.4	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/c/0ce4702d-f65b-413e-99da-112f632a0a63.jpg?1562300328
+Aven_Wind_Mage	2U	none	Creature	C	2.4	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/b/1b12dfc1-81f2-44b2-baa2-73cc21363978.jpg?1562300751
+Aviation_Pioneer	2U	none	Creature	C	2.5	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/6/e6966738-b4fc-4854-81b0-09de305854f2.jpg?1614975429
+Banefire	XR	none	Spell	R	4.1	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/b/5b012532-1186-4dc8-9d42-867e418b0280.jpg?1562302226
+Blanchwood_Armor	2G	none	Spell	U	2.3	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/b/1b01d243-9f68-47c7-980b-1418e5f2f3e9.jpg?1562300742
+Blood_Divination	3B	none	Spell	U	2.3	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/f/6fe72bd9-825e-4451-9314-826882f75c85.jpg?1562302685
+Boggart_Brute	2R	none	Creature	C	2.4	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/2/32b7438d-e905-4627-9299-e2224377c8e7.jpg?1562301272
+Bogstomper	4BB	none	Creature	C	1.9	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/5/05145a8d-0bfb-4f07-87cf-65875310bdb4.jpg?1562300265
+Bone_Dragon	3BB	none	Creature	M	3.9	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/8/08a0de62-6e9f-4ee9-9d8d-ee6f6a115307.jpg?1562300295
+Bone_to_Ash	2UU	none	Instant	U	2.1	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/5/4579e7fc-650d-41ba-8ed7-3bd6453a3ce3.jpg?1562301757
+Brawl-Bash_Ogre	2RB	none	Creature	U	3.0	[0, 0, 1, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/8/38b9f9d7-a00d-4a90-9d7a-88ece10af328.jpg?1562301693
+Bristling_Boar	3G	none	Creature	C	2.3	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/9/999030b2-2f91-4c45-981f-acdbbf9034af.jpg?1562303364
+Cancel	1UU	none	Instant	C	2.0	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/c/9cff3fae-e072-4068-a1de-27de3d89c532.jpg?1562303390
+Catalyst_Elemental	2R	none	Creature	C	1.9	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/8/e83a678b-19d4-47a5-aa1c-c2437e5009c0.jpg?1562304846
+Cavalry_Drillmaster	1W	none	Creature	C	2.4	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/2/62d2e929-7ae3-4560-9cfa-53b89c8a6016.jpg?1562302622
+Centaur_Courser	2G	none	Creature	C	2.4	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/a/bae6eb55-4bf9-4418-b667-a9a761f91ef9.jpg?1562303887
+Chaos_Wand	3	none	Spell	R	2.2	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/2/62ff0730-6dd9-42d2-be0d-655d04adf229.jpg?1562302627
+Child_of_Night	1B	none	Creature	C	2.0	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/8/3867704d-d2ef-4185-b53d-84eba6a6776f.jpg?1562301688
+Chromium_the_Mutable	4WUB	none	Creature	M	4.6	[1, 1, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/0/50c1de2c-1acc-47c8-9b5e-a9dae3da8a49.jpg?1562302164
+Cinder_Barrens	0	BR	Land	C	2.3	[0, 0, 0.5, 0.5, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/b/db41b554-2bb1-4f11-be29-233d36cc955a.jpg?1562304773
+Cleansing_Nova	3WW	none	Spell	R	3.8	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/b/5be8eed7-c033-42cc-bd21-4512db7af66c.jpg?1562302239
+Colossal_Dreadmaw	4GG	none	Creature	C	2.3	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/8/0/80d4ce4f-8255-419b-9e7f-544d9798e5c8.jpg?1562302903
+Colossal_Majesty	2G	none	Spell	U	2.3	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/3/93f99796-ddc5-4ccd-b925-35622a8648b8.jpg?1562303333
+Crash_Through	R	none	Spell	C	1.8	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/9/a9737a83-8c58-44b5-816e-d8df8a577921.jpg?1562303813
+Crucible_of_Worlds	3	none	Spell	M	1.5	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/b/eb28b35c-28a5-4042-b21d-6d43658a16eb.jpg?1591196097
+Daggerback_Basilisk	2G	none	Creature	C	2.3	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/b/7bc8325b-c7a8-49a5-8a54-a419800ffb93.jpg?1562302881
+Dark-Dweller_Oracle	1R	none	Creature	R	2.9	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/9/69a57bfc-1de2-4b3a-84bc-19ec41087f0d.jpg?1562302659
+Daybreak_Chaplain	1W	none	Creature	C	2.1	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/2/c2f461b1-c801-4f0c-8fd7-fe68b6078ac6.jpg?1562304303
+Death_Baron	1BB	none	Creature	R	3.3	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/9/c9699446-b6f5-4e6a-a263-059cbf6e4b7e.jpg?1562304335
+Declare_Dominance	3GG	none	Spell	U	2.7	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/8/78271f34-f62e-4771-b430-b121097b8fb6.jpg?1562302743
+Demanding_Dragon	3RR	none	Creature	R	4.1	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/1/31b73282-6207-4207-8b9c-86a8f9a263a2.jpg?1562301264
+Demon_of_Catastrophes	4BB	none	Creature	R	4.2	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/5/d50f9563-7bf8-4c3c-ac82-327221e56551.jpg?1562304419
+Departed_Deckhand	1U	none	Creature	U	3.1	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/0/1081df25-1137-4c4d-909b-40e78723652c.jpg?1562300348
+Desecrated_Tomb	3	none	Spell	R	1.6	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/5/458ce930-c100-4ef5-b75a-a18051282f8c.jpg?1562301761
+Detection_Tower	0	none	Land	R	1.0	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/2/02f99756-d334-4dba-a375-ba3d91ecae62.jpg?1562300252
+Diamond_Mare	2	none	Creature	U	2.3	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/a/ca600b3f-2c70-489b-b218-6e3245b90114.jpg?1562304339
+Diregraf_Ghoul	B	none	Creature	U	2.1	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/c/5cf2d355-404e-4c21-9bc2-973d09a845a5.jpg?1562302248
+Dismissive_Pyromancer	1R	none	Creature	R	3.5	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/0/a0d0a9fa-75c9-4492-accd-bc9f79407453.jpg?1562303427
+Disperse	1U	none	Instant	C	2.4	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg?1562301229
+Divination	2U	none	Spell	C	2.3	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/b/cb3b35b8-f321-46d8-a441-6b9a6efa9021.jpg?1562304347
+Djinn_of_Wishes	3UU	none	Creature	R	3.9	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/7/27d38bba-6eb9-4dd8-81aa-722def89b163.jpg?1562300822
+Doomed_Dissenter	1B	none	Creature	C	2.2	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/1/a1f70ee8-7e59-43d6-a7b2-29cb5cd1d8b3.jpg?1562303431
+Doublecast	RR	none	Spell	U	2.0	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/e/be8875d8-fe8c-4721-aa8d-978bf72e9c26.jpg?1562303922
+Draconic_Disciple	1RG	none	Creature	U	3.1	[0, 0, 0, 1, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/3/a353510a-30de-4891-97b9-d7d556531c41.jpg?1615331253
+Dragon's_Hoard	3	none	Spell	R	2.0	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/b/5b441fc8-bc89-47d4-8745-2525aeb6d98d.jpg?1562302234
+Dragon_Egg	2R	none	Creature	U	2.3	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/3/d330ce5b-de86-42ad-ac00-3ae1d3252956.jpg?1562304394
+Druid_of_Horns	3G	none	Creature	U	2.2	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/9/19ca91ea-dffd-44a9-a54a-c664d83c357b.jpg?1562300729
+Druid_of_the_Cowl	1G	none	Creature	C	2.9	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/6/76ceff1d-9e83-41cc-b54b-8bf90d985da9.jpg?1562302734
+Dryad_Greenseeker	1G	none	Creature	U	3.6	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/0/30171803-1e7b-430b-a0de-2dfd2f1115ac.jpg?1562301242
+Duress	B	none	Spell	C	1.8	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/4/b433b9fc-69fc-4a57-a16b-f1afd3033b56.jpg?1562303844
+Dwarven_Priest	3W	none	Creature	C	2.2	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/e/7e1e0f13-35a6-4a5e-8666-47bc5c275be7.jpg?1562302890
+Dwindle	2U	none	Spell	C	2.5	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/b/cb38f190-30f0-49ca-99c3-d3cdf21075e8.jpg?1562304343
+Electrify	3R	none	Removal	C	2.9	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/0/60bee89d-d916-4095-830f-6270f8c4f0d8.jpg?1562302617
+Elvish_Clancaller	GG	none	Creature	R	2.2	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/d/4da3b0bc-84da-4b85-992b-d0700c97157c.jpg?1616182131
+Elvish_Rejuvenator	2G	none	Creature	C	2.2	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/0/d0299b00-b16c-4e7d-b67a-ec160ea81a54.jpg?1562304365
+Enigma_Drake	1UR	none	Creature	U	3.0	[0, 1, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/e/6e0def77-3528-40fb-a6b2-c3d1e31ade65.jpg?1562302676
+Epicure_of_Blood	4B	none	Creature	C	2.3	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/0/40b03528-f4ec-4825-ba4c-c485cb4eab3a.jpg?1562301731
+Essence_Scatter	1U	none	Instant	C	2.8	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/7/975f61eb-a121-4f43-93a4-c6f20c6aee84.jpg?1562303356
+Exclusion_Mage	2U	none	Creature	U	3.1	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/c/ccad82f5-5c5c-42ad-b66e-942f0d9631ca.jpg?1562304356
+Explosive_Apparatus	1	none	Spell	C	2.1	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/0/608f431b-a05c-4610-94f7-928d87b2c056.jpg?1562302613
+Fell_Specter	3B	none	Creature	U	2.5	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/8/e8cb52a4-5fec-41a0-8030-503a61e3d33e.jpg?1562304850
+Field_Creeper	2	none	Creature	C	1.8	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/1/e148c1bf-84a2-48cd-882e-ad0fd74b8f0f.jpg?1562304812
+Fiery_Finish	4RR	none	Removal	U	2.4	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/e/3e38127d-63af-4d26-9ff5-358c8a61f39c.jpg?1562301715
+Fire_Elemental	3RR	none	Creature	C	2.0	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/f/c/fcca2f76-3db9-472b-b78e-a87b81e31d0a.jpg?1562305294
+Forest	0	G	Land	C	-1.0	[0, 0, 0, 0, 0.5]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/2/32df22d3-9b65-4b43-80d9-e4c43575ec74.jpg?1562301281
+Forsaken_Sanctuary	0	WB	Land	C	2.3	[0.5, 0, 0.5, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b376c8c9-cd35-4c2b-8b5b-95ea9735b366.jpg?1562303840
+Foul_Orchard	0	GB	Land	C	2.3	[0, 0, 0.5, 0, 0.5]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/b/6b28e1e1-0813-4e4a-a7a7-058b7787272c.jpg?1562302672
+Fountain_of_Renewal	1	none	Spell	U	2.3	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/6/26894980-8961-4479-85dd-5f01c899718b.jpg?1562300814
+Fraying_Omnipotence	3BB	none	Spell	R	1.5	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/f/0/f0fa0ad8-854a-4b4e-9f87-e1dfaa11253c.jpg?1562304896
+Frilled_Sea_Serpent	4UU	none	Creature	C	2.1	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/0/e0aa62c0-d24b-4bce-9f2b-d42402b0830c.jpg?1562304803
+Gallant_Cavalry	3W	none	Creature	C	2.5	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/3/e388c433-3a37-45f6-825a-d13d2223b6f7.jpg?1562304821
+Gargoyle_Sentinel	3	none	Creature	U	2.5	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/8/381e9f97-9655-4f41-9829-4ac26c2ed6ac.jpg?1562301684
+Gearsmith_Guardian	5	U	Creature	C	2.3	[0, 0.5, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/d/1d532b01-8bf7-4a27-a438-db03bcd00694.jpg?1562300772
+Gearsmith_Prodigy	U	none	Creature	C	1.8	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/7/77d9e666-d9c9-4ccd-89a5-83de79677fa6.jpg?1562302738
+Ghastbark_Twins	5GG	none	Creature	U	2.3	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/4/d470e441-3520-4669-aaa5-f0c57829352a.jpg?1562304411
+Ghirapur_Guide	2G	none	Creature	U	2.3	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/6/06582256-37d4-442d-b452-9cd93d285d2f.jpg?1562300273
+Ghostform	1U	none	Spell	C	1.8	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/4/347760a1-03f5-4cc9-87ad-e08986b1ea21.jpg?1562301299
+Giant_Spider	3G	none	Creature	C	2.3	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/8/0/80996b0d-cd44-445e-96de-677e0018255c.jpg?1562302899
+Gift_of_Paradise	2G	none	Spell	U	2.3	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/0/c0338075-5e84-4a37-957a-9cf23ac261ab.jpg?1562303930
+Gigantosaurus	GGGGG	none	Creature	R	2.0	[0, 0, 0, 0, 5]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/1/c1db84d8-d426-4c0d-b44e-5be7b0f5f5bf.jpg?1562303938
+Goblin_Instigator	1R	none	Creature	C	2.3	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/0/90cef94d-d941-4e08-afec-a116626b74fb.jpg?1562302971
+Goblin_Motivator	R	none	Creature	C	1.9	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/4/94b3a4fb-9024-45ef-a54b-cf3a9fa5b9c2.jpg?1562303343
+Goblin_Trashmaster	2RR	none	Creature	R	3.3	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/b/2bc69988-3c2d-4b76-a8c0-05926b9bbd08.jpg?1581391304
+Goreclaw_Terror_of_Qal_Sisma	3G	none	Creature	R	3.7	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/6/36d4574a-3266-4497-b145-fb25820d8a7f.jpg?1562301680
+Gravedigger	3B	none	Creature	U	2.8	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/c/3c6d2a84-5e47-4f7a-83f7-ee4e670980c7.jpg?1562301706
+Graveyard_Marshal	BB	none	Creature	R	3.5	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/d/4dc5f62c-2d29-4a94-8501-13dc6a93c5a1.jpg?1562302147
+Greenwood_Sentinel	1G	none	Creature	C	1.9	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/e/2eebdd18-6930-42e0-b589-fe15820db6e1.jpg?1562301212
+Guttersnipe	2R	none	Creature	U	2.4	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/b/bbc0f3e7-a287-4624-8266-ca617448fcaa.jpg?1562303895
+Havoc_Devils	2RR	none	Creature	C	2.2	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/f/2f003678-0f17-4f1d-87d5-83613a82044b.jpg?1562301216
+Herald_of_Faith	3WW	none	Creature	U	2.9	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/5/452591ca-7273-4e47-820b-3ff89697a036.jpg?1562301748
+Heroic_Reinforcements	2RW	none	Spell	U	3.2	[1, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/3/33c35bf8-ae43-41aa-aae9-4d7513f9058c.jpg?1562301286
+Hieromancer's_Cage	3W	none	Removal	U	3.4	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/9/197743cd-249c-42ba-ac8d-027c088f8418.jpg?1562300725
+Highland_Game	1G	none	Creature	C	1.9	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/e/4ec59964-42c1-4c29-8c60-37b7f376c347.jpg?1562302156
+Highland_Lake	0	UR	Land	C	2.3	[0, 0.5, 0, 0.5, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/5/b538a465-81c6-4282-9ac3-061167ac7dc3.jpg?1562303862
+Hired_Blade	2B	none	Creature	C	2.0	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/6/7624c9aa-2f47-4fcc-a9fe-cc843e8de053.jpg?1562302725
+Horizon_Scholar	5U	none	Creature	U	2.6	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/e/7e925a7a-da5b-4d5d-b5ff-37645ac217f9.jpg?1562302894
+Hostile_Minotaur	3R	none	Creature	C	2.1	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/d/ad6d0a11-3a9c-4de0-9a46-06d2b9356eb7.jpg?1609919737
+Hungering_Hydra	XG	none	Creature	R	3.2	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/8/4/84127b83-e75a-4f12-92ca-46f50bb89699.jpg?1562302936
+Infectious_Horror	3B	none	Creature	C	1.7	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/1/d17aaa92-10ca-4f70-b45e-5a51e9192efb.jpg?1562304369
+Infernal_Reckoning	B	none	Removal	R	1.7	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/e/4e291f27-d74f-48e7-bcb4-ddcc558c2211.jpg?1562302151
+Infernal_Scarring	1B	none	Spell	C	1.6	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/c/9cf7ff14-0de8-4ef9-8425-df15629adc4b.jpg?1562303382
+Inferno_Hellion	3R	none	Creature	U	2.1	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/c/9cd11004-5b8f-4c71-bde0-eb75eed869b0.jpg?1562303373
+Inspired_Charge	2WW	none	Instant	C	2.0	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/8/1/812cf63f-aa3d-405b-92e1-7ffa31352481.jpg?1562302912
+Invoke_the_Divine	2W	none	Instant	C	1.9	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/c/7c1d36b5-37fb-4e52-ad85-c3a09a990ea0.jpg?1595271215
+Isareth_the_Awakener	1BB	none	Creature	R	3.8	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/4/74e49567-8ad6-4ce9-a55d-4db5e0fd9532.jpg?1562302712
+Island	0	U	Land	C	-1.0	[0, 0.5, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/2/42044efb-b6a8-46c3-90dc-b7a745e819e5.jpg?1562301735
+Isolate	W	none	Removal	R	1.4	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/d/3d9ce5eb-eaeb-4c93-8d31-4aeb8fcc4cce.jpg?1562301710
+Knight's_Pledge	2W	none	Spell	C	1.8	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/3/734ff6ac-000d-4fc6-b97b-07b9b21f745c.jpg?1562302703
+Knight_of_the_Tusk	4WW	none	Creature	C	1.9	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/213b4584-420a-48c2-9709-7b07458e914b.jpg?1562300796
+Knightly_Valor	4W	none	Spell	U	2.8	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/6/366ab022-967d-48ff-a1f9-4bd642dba1ae.jpg?1562301671
+Lathliss_Dragon_Queen	4RR	none	Creature	R	4.5	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/4/54a4c37d-5eeb-42c9-9688-c2ed0d5044cd.jpg?1562302177
+Lava_Axe	4R	none	Spell	C	1.9	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/3/c3dab325-8f4f-4288-9f3f-960e52b4335b.jpg?1562304308
+Lena_Selfless_Champion	4WW	none	Creature	R	3.9	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/f/2ffcbcda-2ba3-45e7-80c0-85ea3b7eea0c.jpg?1562301233
+Leonin_Vanguard	W	none	Creature	U	2.0	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/2/724738ad-6a9b-4ef6-b637-558645cd8151.jpg?1562302694
+Leonin_Warleader	2WW	none	Creature	R	3.9	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b31b2e5e-6572-462a-9fa0-1b2e660099e3.jpg?1562303835
+Lich's_Caress	3BB	none	Removal	C	3.1	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/2/32bd3acd-aa62-4708-9336-e3430fd0e541.jpg?1562301277
+Lightning_Mare	RR	none	Creature	U	2.4	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/c/2ca822a3-4793-4cbc-a2f3-f43985e7ce8f.jpg?1562301199
+Lightning_Strike	1R	none	Removal	U	3.7	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/8/084b7337-c06f-4cbf-8fc0-0b20c221f1dc.jpg?1562300290
+Liliana's_Contract	3BB	none	Spell	R	2.6	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/5/750e6246-c28d-46ed-9966-26706f6d3172.jpg?1562302716
+Liliana_Untouched_by_Death	2BB	none	Planeswalker	M	2.2	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/7/a7939170-f84e-44c6-b8bc-a180cf7f85d9.jpg?1562303461
+Loxodon_Line_Breaker	2W	none	Creature	C	2.0	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/2/928d4250-c379-4134-a263-7811c80a8760.jpg?1562302989
+Luminous_Bonds	2W	none	Removal	C	3.0	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/d/9db10390-725e-40f5-885b-a433e7b46f52.jpg?1562303399
+Macabre_Waltz	1B	none	Spell	C	2.2	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/f/4/f49d5f95-c8a8-4d65-9546-26c2113db817.jpg?1562305269
+Magistrate's_Scepter	3	none	Spell	R	1.5	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/c/ecf1f24f-d910-4ec6-95d2-0ecaf9f051aa.jpg?1595354471
+Make_a_Stand	2W	none	Instant	U	2.1	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/a/4a0857fa-f2cc-4c01-9fe5-8f74d08d1b29.jpg?1562301795
+Manalith	3	none	Spell	C	1.9	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/d/9dfba61f-9a6d-43e3-ad28-f74f737ef186.jpg?1615331277
+Marauder's_Axe	2	none	Spell	C	2.2	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/2/a2ca16ee-e415-4270-a453-47111d07a07f.jpg?1562303435
+Meandering_River	0	WU	Land	C	2.3	[0.5, 0.5, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/f/4/f47ee724-da0f-4eb1-b07b-b07e04e9f5b3.jpg?1562305265
+Mentor_of_the_Meek	2W	none	Creature	R	3.7	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/e/5e18bd43-6cee-40a3-88f5-c775fb705172.jpg?1562302271
+Metamorphic_Alteration	1U	none	Spell	R	2.6	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/f/eff03d37-d90a-4dcc-bacd-64fd71301354.jpg?1562304888
+Meteor_Golem	7	none	Creature	U	2.7	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/b/1bdb0b15-d651-4730-8be9-d0e01145311b.jpg?1562300760
+Mighty_Leap	1W	none	Instant	C	2.0	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/c/dc45dcdd-ed92-43f6-b6d2-670b3252ed27.jpg?1562304785
+Militia_Bugler	2W	none	Creature	U	2.8	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/3/43c5bf25-937c-4e17-9ed4-b4c4579fa9dc.jpg?1562301743
+Millstone	2	none	Spell	U	1.7	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/2/c2051fd0-99cf-4e11-a625-8294e6767e5b.jpg?1562304298
+Mind_Rot	2B	none	Spell	C	2.0	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/8/4/8423f50f-add7-4502-9ac0-8de1ccb2603d.jpg?1562302941
+Mirror_Image	1U	none	Creature	U	2.6	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/b/5b3ffc69-f21b-410e-8993-8c1b4669fc19.jpg?1562302230
+Mistcaller	U	none	Creature	R	1.0	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/3/a35c1bd0-3d1a-4e46-b74d-11db6867e0d7.jpg?1562303444
+Mountain	0	R	Land	C	-1.0	[0, 0, 0, 0.5, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/4/6457f78b-aca6-4ebf-9e89-bf9321ceb35d.jpg?1562302632
+Murder	1BB	none	Removal	U	3.8	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/5/45368bf3-d5e9-43e6-a67d-93c2e93acc72.jpg?1562301752
+Mystic_Archaeologist	1U	none	Creature	R	3.5	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/b/1b19cad0-5754-4625-8303-c8310bc7cbd5.jpg?1562300755
+Naturalize	1G	none	Instant	C	1.8	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/9/390c40ba-2464-44ae-8d67-93c72ab3c425.jpg?1562301697
+Nicol_Bolas_the_Ravager	1UBR	none	Creature	M	4.6	[0, 1, 1, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/b/7b215968-93a6-4278-ac61-4e3e8c3c3943.jpg?1566971561
+Nightmare's_Thirst	B	none	Removal	U	2.4	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/f/1/f12efbc0-ce88-4622-ad07-2808e651ac5a.jpg?1562305253
+Novice_Knight	W	none	Creature	U	2.0	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/0/00101358-0e89-4bd1-b1f2-e889645b616e.jpg?1562300243
+Oakenform	2G	none	Spell	C	2.2	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/b/0bf71f42-6e42-46c0-9e8f-394d2c4519ee.jpg?1562300319
+Omenspeaker	1U	none	Creature	C	2.3	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/4/949589c4-97bc-46b4-bc6c-4b2709fd5e3a.jpg?1562303338
+Omniscience	7UUU	none	Spell	M	0.1	[0, 3, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/b/db534b4e-8bff-4924-baea-9988d195fb25.jpg?1562304777
+Onakke_Ogre	2R	none	Creature	C	2.0	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/e/9e016da6-8800-47b4-9b96-1887677c795c.jpg?1562303411
+One_with_the_Machine	3U	none	Spell	R	2.3	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/7/17f2aaf5-6c1f-4663-865f-6cdd5640485a.jpg?1562300707
+Open_the_Graves	3BB	none	Spell	R	3.0	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/c/9ced1022-abd9-4e22-a4f2-fef738295224.jpg?1562303377
+Oreskos_Swiftclaw	1W	none	Creature	C	2.0	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/e/0ea1dfb4-1983-41f7-956c-f2a1d1489b54.jpg?1562300343
+Palladia-Mors_the_Ruiner	3RGW	none	Creature	M	4.5	[1, 0, 0, 1, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/6/4663bd13-243e-4b8c-9ca8-158576b58803.jpg?1562301770
+Patient_Rebuilding	3UU	none	Spell	R	4.0	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/2/2256e07f-a35a-4393-9744-045564d5770b.jpg?1562300801
+Pegasus_Courser	2W	none	Creature	C	2.6	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/c/0c04eafe-8be0-416e-a5b9-486a3b3b5984.jpg?1562300324
+Pelakka_Wurm	4GGG	none	Creature	R	3.7	[0, 0, 0, 0, 3]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/0/00906b47-6316-4e00-bbf5-b801ab583f4f.jpg?1562300248
+Phylactery_Lich	BBB	none	Creature	R	2.2	[0, 0, 3, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/6/a6e359c3-2a18-4240-b38a-216372161cd8.jpg?1562303456
+Plague_Mare	1BB	none	Creature	U	3.0	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/9/995596a3-343d-4272-86bf-d76fd32ab78e.jpg?1562303360
+Plains	0	W	Land	C	-1.0	[0.5, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/b/0b1b55c1-d74b-4688-a3b8-8480d99524c7.jpg?1562300310
+Plummet	1G	none	Removal	C	1.9	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/8/78a29ddb-fc76-407a-aa58-ec92d011bd44.jpg?1562302858
+Poison-Tip_Archer	2BG	none	Creature	U	3.0	[0, 0, 1, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/e/5e058ff8-043c-498b-8310-0ca45466ac27.jpg?1562302266
+Prodigious_Growth	4GG	none	Spell	R	3.9	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/a/ba2b0966-4e9e-44dc-9145-3c1e644578bc.jpg?1615331237
+Psychic_Corrosion	2U	none	Spell	U	2.2	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/8/285d22fa-1623-463a-83c0-a9aa7c969ce2.jpg?1562301173
+Psychic_Symbiont	4UB	none	Creature	U	3.0	[0, 1, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/1/3188e533-9a72-4a02-b169-a918f7c095ba.jpg?1562301255
+Rabid_Bite	1G	none	Removal	C	2.8	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/b/bbe53385-d63f-4d07-94ed-3ea5a48c79c8.jpg?1614701639
+Ravenous_Harpy	2B	none	Creature	U	2.6	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/7/676ec702-75c4-4733-b500-eb15406778bb.jpg?1562302650
+Reassembling_Skeleton	1B	none	Creature	U	2.6	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/3/a3d4ac21-2203-45f4-b5f2-dc186ccdbe69.jpg?1562303448
+Reclamation_Sage	2G	none	Creature	U	2.6	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/9/2951026c-69bb-4ffc-a24f-b0795a12aa79.jpg?1562301177
+Recollect	2G	none	Spell	U	2.0	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/f/1/f127214f-3e91-4988-b593-1568d0ae1718.jpg?1562304900
+Regal_Bloodlord	3WB	none	Creature	U	3.1	[1, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/5/65a75d3a-58cb-4ee0-88d3-52099cb57ac3.jpg?1562302641
+Reliquary_Tower	0	none	Land	U	0.5	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/8/1/81766fd6-c7e0-4527-a63e-512d126c0421.jpg?1562302917
+Remorseful_Cleric	1W	none	Creature	R	2.7	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/6/9620716d-9be8-4ebd-80d2-679373f4f897.jpg?1562303351
+Resplendent_Angel	1WW	none	Creature	M	4.3	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/586854d1-edfd-4c66-873d-df459324dbfd.jpg?1562302213
+Revitalize	1W	none	Instant	C	1.8	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/f/dfbdd90c-1ae3-45e5-b1e5-5b8615a1511f.jpg?1562304798
+Rhox_Oracle	4G	none	Creature	C	2.3	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/8/281f04d5-af45-4494-ac11-a605d3a06643.jpg?1562300827
+Rise_from_the_Grave	4B	none	Spell	U	2.5	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc73644e-884c-47cd-aeec-ab80360dd5ae.jpg?1562303908
+Rogue's_Gloves	2	none	Spell	U	2.1	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/c/1c3c7d24-7d5c-49de-b9f8-35c6d6c8c52a.jpg?1562300764
+Root_Snare	1G	none	Instant	C	1.7	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/6/76b01fd2-139a-47ed-a8e3-021aa9c91b02.jpg?1562302730
+Runic_Armasaur	1GG	none	Creature	R	2.8	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/4/b445a0f0-2cca-4223-bd27-940d2cb6d29c.jpg?1562303848
+Rupture_Spire	0	none	Land	U	2.1	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/7/b7657f02-d1dd-448e-bc0d-c6f25fbc35ea.jpg?1562303866
+Rustwing_Falcon	W	none	Creature	C	1.9	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/6/c6691e62-8887-41e8-8e74-76ee2353d45e.jpg?1562304316
+Sai_Master_Thopterist	2U	none	Creature	R	3.0	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/9/19316cbb-d1af-4ab7-b588-78637503e986.jpg?1562300716
+Salvager_of_Secrets	3UU	none	Creature	C	2.5	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/a/3a55f484-5734-469c-8d41-95ce44473ec1.jpg?1562301702
+Sarkhan's_Unsealing	3R	none	Spell	R	3.8	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/d/edfa8c8c-8013-46d5-8e80-3d9285fe81c8.jpg?1562304876
+Sarkhan_Fireblood	1RR	none	Planeswalker	M	3.3	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/5/3553a70e-75de-4a8c-9b20-92cd4a317101.jpg?1562301657
+Satyr_Enchanter	1WG	none	Creature	U	2.6	[1, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/3/e31c544f-a748-4180-8366-9bb1622bb99d.jpg?1562304816
+Scapeshift	2GG	none	Spell	M	1.5	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/7/175e21a3-00f7-4c51-8a8e-fbfd7089efda.jpg?1574767873
+Scholar_of_Stars	3U	none	Creature	C	2.1	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/b/cb4664d4-fb00-4572-a60d-00336117b8a5.jpg?1562304352
+Shield_Mare	1WW	none	Creature	U	2.5	[2, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/2/d21e0516-4430-4292-850b-f5c524d7f8f8.jpg?1562304378
+Shock	R	none	Removal	C	2.8	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/f/bf5a0e1e-5239-41f3-a63f-d9303b1b01fc.jpg?1562303926
+Siegebreaker_Giant	3RR	none	Creature	U	2.6	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/d/ede2b911-8eec-4993-ab1c-59b55dfb11b4.jpg?1562304872
+Sift	3U	none	Spell	U	2.7	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/6/46588683-74c7-4041-a43b-95d51ba51a94.jpg?1562301766
+Sigiled_Sword_of_Valeron	3	none	Spell	R	3.9	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/9/497d08a8-cffe-4164-a941-d8c8c85644c7.jpg?1562301779
+Skeleton_Archer	3B	none	Creature	C	2.3	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/8/f/8fee5cc4-a686-4ce6-aa6b-1b8a88e6dea3.jpg?1562302962
+Skilled_Animator	2U	none	Creature	U	2.8	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/586d5000-1fdb-4bfe-aa34-63b25ee94bb9.jpg?1562302217
+Skymarch_Bloodletter	2B	none	Creature	C	2.4	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/c/2c7f2740-a193-4b4c-af00-2dd22d74a4ba.jpg?1562301194
+Skyrider_Patrol	2GU	none	Creature	U	3.2	[0, 1, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/5/650461af-081b-4cc9-a140-865a666f1443.jpg?1562302637
+Skyscanner	3	none	Creature	C	2.5	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd2c1fb7-3c1d-49a9-b2c2-78ba2264df38.jpg?1562303917
+Sleep	2UU	none	Spell	U	3.0	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/0/e0c53e64-69cf-4296-8a1e-f8817f25c0b4.jpg?1562304807
+Smelt	R	none	Spell	C	1.8	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/a/9a13293d-89a7-400c-8309-9f62eeb4769c.jpg?1562303369
+Snapping_Drake	3U	none	Creature	C	2.3	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/f/2f6b6cbc-b25c-4221-ae65-a29fcf504f2f.jpg?1562301220
+Sovereign's_Bite	1B	none	Spell	C	1.6	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/3/5326d251-bb91-4653-b1fa-44f14c4e0b88.jpg?1562302173
+Sparktongue_Dragon	3RR	none	Creature	C	2.4	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc0dbc86-cc12-49e7-9721-dd52b35efcbe.jpg?1562303903
+Spit_Flame	2R	none	Removal	R	3.9	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/4/94df6198-10c0-44e7-8226-dc96d12957c4.jpg?1562303347
+Star-Crowned_Stag	3W	none	Creature	C	2.7	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/5/c57417c7-867b-4b64-bfe3-1744dfe9b44d.jpg?1562304312
+Stitcher's_Supplier	B	none	Creature	U	1.9	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/b/2b737126-50b5-4678-91bf-197b64086fe4.jpg?1562301182
+Stone_Quarry	0	RW	Land	C	2.3	[0.5, 0, 0, 0.5, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/a/bac2b853-f788-4b29-a76d-880da61ad91a.jpg?1562303883
+Strangling_Spores	3B	none	Removal	C	2.6	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/0/300468ab-fbae-42ae-97bc-b08f795efa5c.jpg?1562301237
+Submerged_Boneyard	0	UB	Land	C	2.3	[0, 0.5, 0.5, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/f/df8c56fa-fae6-48ba-813d-0d971b640896.jpg?1562304794
+Suncleanser	W	none	Creature	R	2.0	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/6/3644df41-b690-4581-ac7d-c85cec75411f.jpg?1562301661
+Supreme_Phantom	1U	none	Creature	R	2.2	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/5/d/5d65c22b-7640-4433-930b-4bc381ac7361.jpg?1562302257
+Sure_Strike	1R	none	Instant	C	2.1	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/e/1e618ab0-b092-499c-b5e9-d374433ff19c.jpg?1562300777
+Surge_Mare	UU	none	Creature	U	2.6	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/0/9002d0f1-ff2c-4d1c-a7db-3252ef6bebbd.jpg?1562302966
+Suspicious_Bookcase	2	none	Creature	U	2.3	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/c/ccf01421-856e-4cdd-8938-148928626f56.jpg?1592487570
+Swamp	0	B	Land	C	-1.0	[0, 0, 0.5, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/b/2bfe9801-b683-45d9-924c-6734110816bf.jpg?1562301190
+Switcheroo	4U	none	Spell	U	2.6	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/d/9d3d062c-5853-44f9-b951-a264e9e0d72d.jpg?1562303395
+Take_Vengeance	1W	none	Removal	C	2.4	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/6/66fbde22-d98d-4f12-b4d8-1bad2a9878b2.jpg?1562302645
+Talons_of_Wildwood	1G	none	Spell	C	2.0	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/9/f/9ffa2e83-bc78-4bde-9692-e5165c4ef63b.jpg?1562303419
+Tectonic_Rift	3R	none	Spell	U	1.9	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/1/31b4db74-0c34-442f-a3f9-38194a75ef7b.jpg?1562301260
+Tezzeret_Artifice_Master	3UU	none	Planeswalker	M	4.6	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/5/e5e12371-f05c-41cf-92ca-7cb17c2f7f1a.jpg?1562304834
+Thorn_Lieutenant	1G	none	Creature	R	3.0	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/8/0812e942-eb78-48c8-857e-5f0ff1bd777b.jpg?1562300286
+Thornhide_Wolves	4G	none	Creature	C	2.2	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/f/c/fc0f3812-bb6c-4d99-b505-9dfd84e3fd95.jpg?1562305290
+Thud	R	none	Removal	U	2.1	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/1/11bed78a-c579-424a-8fcc-322ce2630dbc.jpg?1562300357
+Timber_Gorge	0	RG	Land	C	2.3	[0, 0, 0, 0.5, 0.5]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/7/07076412-18fe-4e15-bdb5-17111b4a66db.jpg?1562300278
+Titanic_Growth	1G	none	Instant	C	2.2	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/f/e/fe574e49-723a-409b-9222-125eebb620ff.jpg?1562305302
+Tolarian_Scholar	2U	none	Creature	C	1.9	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/e/2eda67da-02b5-4ecb-9038-10e026d454ec.jpg?1562301207
+Tormenting_Voice	1R	none	Spell	C	2.0	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/8/48dbbc83-5549-480f-bf98-da90495d2a29.jpg?1562301774
+Totally_Lost	4U	none	Instant	C	2.2	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/0/5/05f0b6ce-eb70-4f42-9360-c7d09f48a5c5.jpg?1562300269
+Tranquil_Expanse	0	GW	Land	C	2.3	[0.5, 0, 0, 0, 0.5]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/8/78b33867-5ccf-49a1-8e9b-9d2ddac78f17.jpg?1562302863
+Transmogrifying_Wand	3	none	Spell	R	3.1	[0, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/b/1b06b670-7238-4732-85fd-ac6abebea57f.jpg?1562300746
+Trumpet_Blast	2R	none	Instant	C	1.9	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/c/6/c676a5b0-bd46-46b3-b71b-a50b86c9b0bd.jpg?1562304321
+Trusty_Packbeast	2W	none	Creature	C	1.9	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/8/3/8320e35b-15b9-4f98-b9b8-9c951696408b.jpg?1562302921
+Two-Headed_Zombie	3B	none	Creature	C	2.2	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/2/c/2cc5760e-8b27-4d37-9772-c9eda90b1d95.jpg?1562301203
+Uncomfortable_Chill	2U	none	Instant	C	2.0	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/8/f/8f12d70b-fff7-4d0c-982e-2fea70018a78.jpg?1562302957
+Vaevictis_Asmadi_the_Dire	3BRG	none	Creature	M	4.3	[0, 0, 1, 1, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/d/1/d19fdc00-21eb-48dc-966a-6b634dc5a2c4.jpg?1562304374
+Valiant_Knight	3W	none	Creature	R	3.7	[1, 0, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/a/6ad750bc-850b-483b-8910-eb6562f925bc.jpg?1562302667
+Vampire_Neonate	B	none	Creature	C	2.4	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/6/167822a5-2ab5-42f5-afa4-562fe2d7501b.jpg?1562300697
+Vampire_Sovereign	3BB	none	Creature	U	3.5	[0, 0, 2, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/e/e/ee338221-ead9-4b89-8b0c-12745c4ca13d.jpg?1562304880
+Viashino_Pyromancer	1R	none	Creature	C	2.0	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/8/a82fdb2f-b199-44ff-9615-90fc074cb8b0.jpg?1562303465
+Vigilant_Baloth	3GG	none	Creature	U	2.9	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/4/34ad8e5d-0c26-4588-8161-b22197715d63.jpg?1562301653
+Vine_Mare	2GG	none	Creature	U	3.5	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/b/9/b9980835-cd32-4870-88df-c79cd5534968.jpg?1562303874
+Vivien's_Invocation	5GG	none	Spell	R	3.6	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/8/784c4711-223d-4b95-a163-87e57f87b8db.jpg?1562302854
+Vivien_Reid	3GG	none	Planeswalker	M	4.4	[0, 0, 0, 0, 2]	https://c1.scryfall.com/file/scryfall-cards/normal/front/6/8/681fbd66-b622-4f20-a860-f101aff21109.jpg?1562302655
+Volcanic_Dragon	4RR	none	Creature	U	2.8	[0, 0, 0, 2, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/d/ade02a6b-0025-418b-8e20-0eb538fd66b1.jpg?1562303821
+Volley_Veteran	3R	none	Creature	U	3.3	[0, 0, 0, 1, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/1/6/164960fc-6e80-4a53-90d7-5a18c0a28083.jpg?1562300693
+Walking_Corpse	1B	none	Creature	C	1.8	[0, 0, 1, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/4/344a26ab-524f-4daa-ae0a-9d94e34c96df.jpg?1562301290
+Wall_of_Mist	1U	none	Creature	C	2.1	[0, 1, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/4/f/4fb995c8-1bc2-4ff4-b8e9-f9b6bc0de0fe.jpg?1615334460
+Wall_of_Vines	G	none	Creature	C	1.7	[0, 0, 0, 0, 1]	https://c1.scryfall.com/file/scryfall-cards/normal/front/7/3/7327e768-d90d-4677-b4dd-10837ffe8be2.jpg?1562302698
+Windreader_Sphinx	5UU	none	Creature	R	3.5	[0, 2, 0, 0, 0]	https://c1.scryfall.com/file/scryfall-cards/normal/front/a/5/a5964daa-2f9e-4a4b-a091-91e7adc3e9c3.jpg?1562303452
+Woodland_Stream	0	GU	Land	C	2.3	[0, 0.5, 0, 0, 0.5]	https://c1.scryfall.com/file/scryfall-cards/normal/front/3/0/303224d6-9769-4127-8e33-9129f337e2a8.jpg?1562301246

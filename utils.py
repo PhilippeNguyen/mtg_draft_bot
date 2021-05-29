@@ -1,6 +1,4 @@
 import numpy as np
-import tensorflow as tf
-from sklearn import preprocessing
 
 basic_land_names = set(['plains','island','swamp','mountain','forest'])
 

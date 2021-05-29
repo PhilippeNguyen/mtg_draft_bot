@@ -8,30 +8,33 @@ file_path = os.path.abspath(__file__)
 metadata_path = pjoin(os.path.split(file_path)[0],'metadata')
 from itertools import product
 
-def get_draft_creator(set_code):
-    if set_code.lower() == 'm19':
-        return M19DraftCreator
-    elif set_code.lower() == 'stx':
-        return STXDraftCreator
-    else:
-        raise ValueError("No known DraftCreator for this set code")
 
-def load_draft_creator(set_code):
-    """Will load the draft_creator (using the default config data) given the set_code
 
-    Args:
-        set_code (str): 3 letter/symbol set code used for identifying a set (e.g. 'STX' for Strixhaven)
-    """
-    if set_code.lower() == 'm19':
-        set_df = pd.read_csv(pjoin(metadata_path,'M19_standardized_rating.tsv'),delimiter="\t")
-        land_df = pd.read_csv(pjoin(metadata_path,'M19_land_rating.tsv'),delimiter="\t")
-        return M19DraftCreator(set_df=set_df,land_df=land_df)
 
-    elif set_code.lower() == 'stx':
-        set_df = pd.read_csv(pjoin(metadata_path,'STX_card_names.csv'))
-        return STXDraftCreator(set_df=set_df)
-    else:
-        raise ValueError("No known DraftCreator for this set code")
+# def get_draft_creator(set_code):
+#     if set_code.lower() == 'm19':
+#         return M19DraftCreator
+#     elif set_code.lower() == 'stx':
+#         return STXDraftCreator
+#     else:
+#         raise ValueError("No known DraftCreator for this set code")
+
+# def load_draft_creator(set_code):
+#     """Will load the draft_creator (using the default config data) given the set_code
+
+#     Args:
+#         set_code (str): 3 letter/symbol set code used for identifying a set (e.g. 'STX' for Strixhaven)
+#     """
+#     if set_code.lower() == 'm19':
+#         set_df = pd.read_csv(pjoin(metadata_path,'M19_standardized_rating.tsv'),delimiter="\t")
+#         land_df = pd.read_csv(pjoin(metadata_path,'M19_land_rating.tsv'),delimiter="\t")
+#         return M19DraftCreator(set_df=set_df,land_df=land_df)
+
+#     elif set_code.lower() == 'stx':
+#         set_df = pd.read_csv(pjoin(metadata_path,'STX_card_names.csv'))
+#         return STXDraftCreator(set_df=set_df)
+#     else:
+#         raise ValueError("No known DraftCreator for this set code")
 
 class BaseDraftCreator:
     rarity_ordering = {'c':0,'u':1,'r':2,'m':3,
@@ -399,3 +402,38 @@ class M19DraftCreator(BaseDraftCreator):
         if len(digit_string) > 0:
             cmc += int(digit_string)
         return cmc
+
+
+class BaseSetMetaData:
+    draft_creator = None
+    @staticmethod
+    def load_draft_creator(self):
+        raise NotImplementedError
+
+
+class M19MetaData(BaseSetMetaData):
+    draft_creator = M19DraftCreator
+    set_df_path = pjoin(metadata_path,'M19_standardized_rating.tsv')
+    land_df_path = pjoin(metadata_path,'M19_land_rating.tsv')
+
+    @classmethod
+    def load_draft_creator(cls):
+        set_df = pd.read_csv(cls.set_df_path,delimiter="\t")
+        land_df = pd.read_csv(cls.land_df_path,delimiter="\t")
+        return M19DraftCreator(set_df=set_df,land_df=land_df)
+
+class STXMetaData(BaseSetMetaData):
+    draft_creator = STXDraftCreator
+    set_df_path = pjoin(metadata_path,'STX_card_names.csv')
+
+    @classmethod
+    def load_draft_creator(cls):
+        set_df = pd.read_csv(cls.set_df_path)
+        return STXDraftCreator(set_df=set_df)
+
+def get_set_metadata(set_code):
+    return set_metadata_map[set_code.lower()]
+
+available_sets = ['m19','stx']
+set_metadata_map = {'m19':M19MetaData,
+                'stx':STXMetaData}

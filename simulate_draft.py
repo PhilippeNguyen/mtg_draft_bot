@@ -5,7 +5,7 @@ from nn_utils import NNBot
 import argparse
 import keras
 import sys
-from set_utils import load_draft_creator
+from set_utils import get_set_metadata
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(
@@ -25,7 +25,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     model = keras.models.load_model(args.model_hdf5)
     set_code = args.set_code
-    draft_coord = load_draft_creator(set_code)
+    set_metadata = get_set_metadata(set_code)
+    draft_coord = set_metadata.load_draft_creator()
 
     num_bots = 8
     num_packs = 3

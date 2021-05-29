@@ -16,6 +16,7 @@ The versions are not hard requirements. They are just what I use.
 * keras==2.4.3
 * pandas==1.1.2
 * scikit-learn==0.23.2
+* Pillow==5.4.1
 
 
 ## Usage

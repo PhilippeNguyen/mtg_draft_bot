@@ -29,7 +29,9 @@ def create_set_csv_from_scryfall_oracle_json(oracle_json_path,
                                 'Mana Value':obj['cmc'],
                                 'Rarity':obj['rarity'],
                                 'Set Code':obj['set'],
-                                'Type':obj['type_line']})
+                                'Type':obj['type_line'],
+                                'Image URL':card['image_uris']['normal']})
+
     set_cards = sorted(set_cards,key=lambda x:x['Name'])
 
     df = pd.DataFrame.from_records(set_cards)
