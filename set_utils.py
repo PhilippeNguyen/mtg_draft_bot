@@ -6,6 +6,7 @@ import pandas as pd
 from utils import basic_land_names
 file_path = os.path.abspath(__file__)
 metadata_path = pjoin(os.path.split(file_path)[0],'metadata')
+images_path = pjoin(os.path.split(file_path)[0],'images')
 from itertools import product
 
 
@@ -112,7 +113,7 @@ class ScryfallDraftCreator(BaseDraftCreator):
 
 class STXDraftCreator(ScryfallDraftCreator):
     def __init__(self,set_df=None):
-
+        self.pack_size=15
         #numbers taken from 17L data
         self.common_lesson_rate = 0.924774665362472
         self.rare_lesson_rate = 0.06804351108456
@@ -258,7 +259,8 @@ class M19DraftCreator(BaseDraftCreator):
         self.num_uncommon = 3
         self.num_rare = 1
         self.num_land = 1
-
+        self.pack_size=15
+        
         if set_df is None:
             self.set_df = self._get_default_set_df()
         else:
@@ -415,7 +417,7 @@ class M19MetaData(BaseSetMetaData):
     draft_creator = M19DraftCreator
     set_df_path = pjoin(metadata_path,'M19_standardized_rating.tsv')
     land_df_path = pjoin(metadata_path,'M19_land_rating.tsv')
-
+    image_folder_path = pjoin(images_path,'m19')
     @classmethod
     def load_draft_creator(cls):
         set_df = pd.read_csv(cls.set_df_path,delimiter="\t")
@@ -425,7 +427,7 @@ class M19MetaData(BaseSetMetaData):
 class STXMetaData(BaseSetMetaData):
     draft_creator = STXDraftCreator
     set_df_path = pjoin(metadata_path,'STX_card_names.csv')
-
+    image_folder_path = pjoin(images_path,'stx')
     @classmethod
     def load_draft_creator(cls):
         set_df = pd.read_csv(cls.set_df_path)

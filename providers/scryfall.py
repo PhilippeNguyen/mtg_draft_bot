@@ -20,6 +20,8 @@ def create_set_csv_from_scryfall_oracle_json(oracle_json_path,
                 card = obj['card_faces'][0]
             else: 
                 card = obj
+            if obj['lang'] == 'ja':
+                continue
             if card['name'] in card_names:
                 continue
             else: 
