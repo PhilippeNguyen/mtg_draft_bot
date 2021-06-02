@@ -39,6 +39,7 @@ from itertools import product
 
 class BaseDraftCreator:
     rarity_ordering = {'c':0,'u':1,'r':2,'m':3,
+                        'C':0,'U':1,'R':2,'M':3,
                         'common':0,'uncommon':1,'rare':2,'mythic':3,}
     def create_pack(self):
         raise NotImplementedError
@@ -325,7 +326,7 @@ class M19DraftCreator(BaseDraftCreator):
         for pack_name in pack_names:
             print(self.name_dict[pack_name])
 
-    def card_info_from_idx(self,card_idx):
+    def get_info_from_idx(self,card_idx):
         return self.name_dict[self.label_encoder.inverse_transform([card_idx])[0]]
 
     def card_name_from_idx(self,card_idx):
@@ -334,6 +335,8 @@ class M19DraftCreator(BaseDraftCreator):
     def card_and_cc_from_idx(self,card_idx):
         card_info = self.name_dict[self.label_encoder.inverse_transform([card_idx])[0]]
         return
+
+        
     def read_pool_picks(self,bot_pick_vec,verbosity=2):
         '''
             bot_pick_vec should be of shape (set_size),
@@ -344,7 +347,7 @@ class M19DraftCreator(BaseDraftCreator):
         deck = []
         for card_idx in non_zeros:
             num_card = str(int(bot_pick_vec[card_idx]))
-            card_info = self.card_info_from_idx(card_idx)
+            card_info = self.get_info_from_idx(card_idx)
             cast_cost = card_info['Casting Cost 1']
             cmc = self.cmc_from_string(cast_cost)
 

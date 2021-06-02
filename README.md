@@ -18,9 +18,15 @@ The versions are not hard requirements. They are just what I use.
 * scikit-learn==0.23.2
 * Pillow==5.4.1
 
-
-## Usage
+## Setting Up the Data & Training the Bots
 Since the M19 data (from draftsim) and the STX data (from 17Lands) are formatted differently, the procedure for each of them will be slightly different.
+
+### Pre-Trained Models
+Here are some pre-trained models, if you want to skip the training steps below.
+
+(M19 Model)[https://drive.google.com/file/d/1YplrfTjG31SiKLTtg2g19aB5cZYb-qKA/view?usp=sharing]
+(STX Premier Draft Model)[https://drive.google.com/file/d/1FurL_mpAPQR_8Mj7NDRo6rfqF7biHBHy/view?usp=sharing]
+(STX Traditional Draft Model)[https://drive.google.com/file/d/1BQUt-MEi-SBYziPUu0MvhfE-HEtxAuIF/view?usp=sharing]
 
 ### Draftsim Data (M19)
 Download data found here [https://draftsim.com/draft-data/](https://draftsim.com/draft-data/)
@@ -30,8 +36,6 @@ Download data found here [https://draftsim.com/draft-data/](https://draftsim.com
 3 files will be created, a train_drafts.pkl,test_drafts.pkl,and standardized_m19_rating.tsv. You will use these pkls in the next step. You should check to see if the generated standardized_m19_rating.tsv file matches the one in the mtg_draft_bot/metadata folder.
 3. run  'python train_nn.py --train_pkl {} --test_pkl {} --output_name {}' . The first 
 2 files are the outputs from step 2, 'output_name' is the path to the output hdf5 file that you want to create, this contains the model
-4. To run a simulation draft, run 'python simulate_draft.py --model_hdf5 {} --set_code {}. 
-The model_hdf5 is the output from 3, the set_code is 'm19'
 
 ### 17Lands Data (STX)
 The data can be found here [https://www.17lands.com/public_datasets](https://www.17lands.com/public_datasets). You can use either the 'STX Premier Draft Data' or the 'STX Traditional Draft Data'; this data is collected from the draft process. (Do not use 'STX Traditional/Premier Draft Game Data', which is data from the games played)
@@ -40,8 +44,20 @@ The data can be found here [https://www.17lands.com/public_datasets](https://www
 3 files will be created, a _train_data.pkl,_test_data.pkl,and a _card_names.csv. You will use these pkls in the next step. You should check to see if the card named in each row in the generated _card_names.csv file matches 'STX_card_names.csv' in the mtg_draft_bot/metadata folder. (Note: the information stored in the two csvs will be different, just ensure that each row corresponds to the same card)
 3. run  'python train_nn.py --train_pkl {} --test_pkl {} --output_name {}' . The first 
 2 files are the outputs from step 2, 'output_name' is the path to the output hdf5 file that you want to create, this contains the model
+
+## Playing a Draft Against Bots
+1. Run 'python play_draft.py'
+2. On the top bar, click:  File > New Draft
+3. Choose the set you want to draft, then press OK.
+4. Use the file selector to select the model hdf5 file (must correspond to the set chosen in step 3)
+5. Now you should see the cards, left click on one to add it to your deck. The bots will pick their cards and then you move onto your next pick
+
+Here is an example of what it should look like:
+![Example Image](https://github.com/PhilippeNguyen/mtg_draft_bot/blob/master/assets/play_draft_ex_1.png)
+
+## Simulating an All Bot Draft
 4. To run a simulation draft, run 'python simulate_draft.py --model_hdf5 {} --set_code {}. 
-The model_hdf5 is the output from 3, the set_code is 'stx'
+The model_hdf5 is the hdf5 model that was trained in the training stage, the set_code is 'm19' or 'stx'
 
 
 Once you run it you should see what decks each bot drafted like:
