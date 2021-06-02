@@ -24,9 +24,9 @@ Since the M19 data (from draftsim) and the STX data (from 17Lands) are formatted
 ### Pre-Trained Models
 Here are some pre-trained models, if you want to skip the training steps below.
 
-(M19 Model)[https://drive.google.com/file/d/1YplrfTjG31SiKLTtg2g19aB5cZYb-qKA/view?usp=sharing]
-(STX Premier Draft Model)[https://drive.google.com/file/d/1FurL_mpAPQR_8Mj7NDRo6rfqF7biHBHy/view?usp=sharing]
-(STX Traditional Draft Model)[https://drive.google.com/file/d/1BQUt-MEi-SBYziPUu0MvhfE-HEtxAuIF/view?usp=sharing]
+[M19 Model](https://drive.google.com/file/d/1YplrfTjG31SiKLTtg2g19aB5cZYb-qKA/view?usp=sharing)
+[STX Premier Draft Model](https://drive.google.com/file/d/1FurL_mpAPQR_8Mj7NDRo6rfqF7biHBHy/view?usp=sharing)
+[STX Traditional Draft Model](https://drive.google.com/file/d/1BQUt-MEi-SBYziPUu0MvhfE-HEtxAuIF/view?usp=sharing)
 
 ### Draftsim Data (M19)
 Download data found here [https://draftsim.com/draft-data/](https://draftsim.com/draft-data/)
