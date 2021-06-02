@@ -68,4 +68,4 @@ if __name__ == '__main__':
         print()
         print('Bot_Num: {}'.format(bot_idx))
 
-        draft_coord.read_bot_picks(nnbot.picks)
+        print(draft_coord.read_pool_picks(nnbot.picks))

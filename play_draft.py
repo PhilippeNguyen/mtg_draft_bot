@@ -9,6 +9,7 @@ from nn_utils import NNBot
 import numpy as np
 from functools import partial
 import argparse
+from timeit import default_timer as timer
 
 def resize_image(image, maxsize):
     r1 = image.size[0]/maxsize[0] # width ratio
@@ -52,18 +53,11 @@ class MainApplication(tk.Frame):
         )
 
         options_menu = tk.Menu(self.menubar, tearoff=0)
-        # options_menu.add_command(
-        #     label="New Draft", command=self.popNewDraftWindow
-        # )
-        # options_menu.add_command(
-        #     label="Exit", command=self.popQuitWindow
-        # )
 
         self.menubar.add_cascade(label="File", menu=filemenu)
         self.menubar.add_cascade(label="Options", menu=options_menu)
         self.root.config(menu=self.menubar)
 
-        
         self.init_main_window()
         self.pack_propagate(0)
         self.focus_set()
@@ -77,10 +71,8 @@ class MainApplication(tk.Frame):
     
     def init_main_window(self):
         self.display_label = tk.Label(self, text="Click 'File > New Draft' to start")
-        # self.display_label.grid(row=self.display_row,column=0)
         self.display_label.pack(fill=tk.BOTH, expand=1)
-        # self.current_set_label = tk.Label(self, text="Current Set : {}".format(self.mtg_set.get()))
-        # self.current_set_label.grid(row=1,column=0)
+
         self.apply_options()
     
     def load_model(self):
@@ -118,6 +110,17 @@ class MainApplication(tk.Frame):
         self.set_size = self.draft_creator.get_set_size()
         self.set_images_folder = pjoin(images_path,set_code)
 
+        if hasattr(self,'deck_frame'):
+            self.deck_frame.destroy()
+        self.deck_frame = tk.Frame(self,width=self.deck_frame_width.get())
+        self.deck_frame.grid(rowspan=self.num_card_rows.get(),
+                    row=0,
+                    column=self.deck_col)
+
+        if hasattr(self,'deck_display'):
+            self.deck_display.destroy()
+        self.deck_display = tk.Label(self.deck_frame, text="~",justify='left')
+        self.deck_display.grid()
 
         if hasattr(self,'card_buttons'):
             for card_button in self.card_buttons:
@@ -133,39 +136,22 @@ class MainApplication(tk.Frame):
                 self.card_buttons.append(card_button)
                 card_idx+=1
         
-        self.deck_frame = tk.Frame(self,width=self.deck_frame_width.get())
-        self.deck_frame.grid(rowspan=self.num_card_rows.get(),
-                            row=0,
-                            column=self.deck_col)
-        self.deck_display = tk.Label(self.deck_frame, text="AAAAAAAAAA")
-        self.deck_display.grid(row=0,column=0)
-
         self.display_label.grid(row=self.display_row,column=(self.num_card_cols.get()//2))
-
-        #TODO differentiate between begin_draft and restart_draft
-        #restarting draft means the old buttons should be destroyed so as to 
-        # not create a mem leak
-        #TODO: Above can be done by conceptualizing the set selection, and set restart separately
-        #TODO: build deck, deck label
-        #TODO: draft cards and images
 
         self.start_draft()
     
     def update_display(self):
         display_text = '''Drafting : {} \n Pack # : {} \n Pick # : {} \n Pass Direction : {} \n   
                         '''.format(self.mtg_set.get(),
-                                self.pack_num,
-                                self.pick_num,
+                                self.pack_num+1,
+                                self.pick_num+1,
                                 self.pass_direction
                         )
         self.display_label.configure(text=display_text)
         if np.sum(self.player_deck) ==0:
             self.deck_display.configure(text='No Cards Selected')
         else:
-            card_idxs = np.nonzero(self.player_deck)[0]
-            deck_str  = ''
-            for card_idx in card_idxs:
-                deck_str += self.draft_creator.set_df.iloc[card_idx]['Name'] + '\n'
+            deck_str = self.draft_creator.read_pool_picks(self.player_deck)
             self.deck_display.configure(text=deck_str)
             return
 
@@ -185,10 +171,8 @@ class MainApplication(tk.Frame):
         
         self.pack_num = 0
         self.pick_num = 0
-        self.set_pick_direction()
-        self.create_packs()
         self.pick_rotation()
-    
+
     def create_packs(self):
         self.bot_packs = []
         for _ in range(self.num_bots):
@@ -210,11 +194,17 @@ class MainApplication(tk.Frame):
 
     
     def pick_rotation(self):
-        self.update_display()
-
+        
         if self.pick_num == self.draft_creator.pack_size:
-            #TODO update pack num
-            pass
+            self.pack_num+=1
+            self.pick_num=0
+            if self.pack_num == self.num_packs:
+                self.show_player_cards()
+                return
+
+        if self.pick_num==0:
+            self.set_pick_direction()
+            self.create_packs()
 
         #bot picks
         self.new_bot_packs = [[] for _ in range(self.num_bots)]
@@ -222,12 +212,13 @@ class MainApplication(tk.Frame):
             pack = self.bot_packs[bot_idx]
             out_pack = nnbot.pick_and_add(pack)
             out_bot_idx = bot_idx + self.pass_dir_val
-            if out_bot_idx == -1 or out_bot_idx == self.num_bots+1:
+            if out_bot_idx == -1 or out_bot_idx == self.num_bots:
                 self.new_player_pack = out_pack
             else:
                 self.new_bot_packs[out_bot_idx] = out_pack
 
         #set up player pick
+        self.update_display()
         self.show_player_cards()
 
     def show_player_cards(self):
@@ -243,7 +234,7 @@ class MainApplication(tk.Frame):
             if button_idx < len(self.player_card_tuples):
                 card_tuple = self.player_card_tuples[button_idx]
                 card_idx,card_info = card_tuple
-                print(self.draft_creator.str_from_info(card_info))
+                # print(self.draft_creator.str_from_info(card_info))
 
                 image_path = pjoin(self.set_images_folder,'{:04d}.jpg'.format(card_idx))
                 card_image = Image.open(image_path)
@@ -256,13 +247,11 @@ class MainApplication(tk.Frame):
                 self.card_photoimages.append(card_photoimage)
             else:
                 self.card_buttons[button_idx].config(image=self.black_image)
-        #on_command, pick card, rotate cards and run pick_rotation
 
     def add_player_card(self,card_idx):
         self.player_deck[card_idx]+=1
 
     def card_click(self,button_idx):
-        print("{}".format(button_idx))
         if button_idx >= len(self.player_card_tuples):
             return
         card_idx,card_info = self.player_card_tuples[button_idx]
@@ -276,6 +265,8 @@ class MainApplication(tk.Frame):
             self.new_bot_packs[0] = self.player_pack
         self.player_pack = self.new_player_pack
         self.bot_packs = self.new_bot_packs
+
+        self.pick_num+=1
         self.pick_rotation()
     
     def popQuitWindow(self):

@@ -46,7 +46,7 @@ class BaseDraftCreator:
         raise NotImplementedError
     def get_set_size(self):
         raise NotImplementedError
-    def read_bot_picks(self):
+    def read_pool_picks(self):
         raise NotImplementedError
 
     def get_set_size(self):
@@ -91,25 +91,9 @@ class ScryfallDraftCreator(BaseDraftCreator):
             card_str = '{:3}'.format(card_info['Rarity'][0].upper()) + card_str
         return card_str
 
-    def read_bot_picks(self,bot_pick_vec,verbosity=2):
-        '''
-            bot_pick_vec should be of shape (set_size),
-            with the value of each idx
-        '''
+    def read_pool_picks(self,bot_pick_vec,verbosity=2):
+        raise NotImplementedError
 
-        non_zeros = np.nonzero(bot_pick_vec)[0]
-        deck = []
-        for card_idx in non_zeros:
-            num_card = str(int(bot_pick_vec[card_idx]))
-            card_info = self.get_info_from_idx(card_idx)
-            card_str = self.str_from_info(card_info,verbosity=verbosity)
-            card_str = '{:3}'.format(num_card) + card_str
-            deck.append((card_info['Mana Value'],card_str))
-
-        deck = sorted(deck,key=lambda x:x[0])
-
-        for _,card_str in deck:
-            print(card_str)
 
 class STXDraftCreator(ScryfallDraftCreator):
     def __init__(self,set_df=None):
@@ -222,7 +206,7 @@ class STXDraftCreator(ScryfallDraftCreator):
 
         return np.asarray(pack)
 
-    def read_bot_picks(self,bot_pick_vec,verbosity=2):
+    def read_pool_picks(self,bot_pick_vec,verbosity=2):
         '''
             bot_pick_vec should be of shape (set_size),
             with the value of each idx
@@ -244,11 +228,14 @@ class STXDraftCreator(ScryfallDraftCreator):
         main_deck = sorted(main_deck,key=lambda x:x[0])
         lessons = sorted(lessons,key=lambda x:x[0])
 
+        out_str = ''
         for _,card_str in main_deck:
-            print(card_str)
-        print('Lessons:')
+            out_str += card_str + '\n'
+        out_str += 'Lessons: \n'
         for _,card_str in lessons:
-            print(card_str)
+            out_str += card_str + '\n'
+
+        return out_str
 
 
 class M19DraftCreator(BaseDraftCreator):
@@ -347,7 +334,7 @@ class M19DraftCreator(BaseDraftCreator):
     def card_and_cc_from_idx(self,card_idx):
         card_info = self.name_dict[self.label_encoder.inverse_transform([card_idx])[0]]
         return
-    def read_bot_picks(self,bot_pick_vec,verbosity=2):
+    def read_pool_picks(self,bot_pick_vec,verbosity=2):
         '''
             bot_pick_vec should be of shape (set_size),
             with the value of each idx
@@ -373,8 +360,11 @@ class M19DraftCreator(BaseDraftCreator):
 
         deck = sorted(deck,key=lambda x:x[0])
 
+        out_str = ''
         for cmc,card_str in deck:
-            print(card_str)
+            out_str += card_str + '\n'
+            # print(card_str)
+        return out_str
 
     @staticmethod
     def cmc_from_string(cmc_string):
