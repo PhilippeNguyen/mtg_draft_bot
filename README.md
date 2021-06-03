@@ -1,12 +1,8 @@
 # mtg_draft_bot
 
-Code for training a simple neural network bot which will draft the M19 Magic The Gathering Core Set. 
-Uses the data from [https://github.com/khakhalin/MTG](https://github.com/khakhalin/MTG) (some of their processing code is used here in the draftsimtools subfolder).
-The paper can be found here [https://arxiv.org/abs/2009.00655](https://arxiv.org/abs/2009.00655), and the model I use in this
-repo is similar to the neural network model in the paper. I use tensorflow-keras model instead of pytorch.
+Code for training and running a simple neural network bot which will draft Magic The Gathering sets. Allows user to simulate a draft of 8 bots, or use a GUI to draft against 7 bots.
 
-Currently, code here is just for training the NN model and running a simulation draft with 8
-copies of that model. You can see an example of the simulation below.
+The model I use in this repo is similar to the neural network model in the paper [https://arxiv.org/abs/2009.00655](https://arxiv.org/abs/2009.00655). I use tensorflow-keras model instead of pytorch.
 
 Currently supported sets: M19 and STX, will add more more sets if data for those sets becomes available.
 
@@ -25,7 +21,9 @@ Since the M19 data (from draftsim) and the STX data (from 17Lands) are formatted
 Here are some pre-trained models, if you want to skip the training steps below.
 
 [M19 Model](https://drive.google.com/file/d/1YplrfTjG31SiKLTtg2g19aB5cZYb-qKA/view?usp=sharing)
+
 [STX Premier Draft Model](https://drive.google.com/file/d/1FurL_mpAPQR_8Mj7NDRo6rfqF7biHBHy/view?usp=sharing)
+
 [STX Traditional Draft Model](https://drive.google.com/file/d/1BQUt-MEi-SBYziPUu0MvhfE-HEtxAuIF/view?usp=sharing)
 
 ### Draftsim Data (M19)

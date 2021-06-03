@@ -1,5 +1,5 @@
 import tkinter as tk
-from PIL import Image, ImageTk
+from PIL import Image, ImageTk,ImageOps
 from set_utils import available_sets,set_metadata_map,images_path
 import os
 from os.path import join as pjoin
@@ -43,6 +43,17 @@ class MainApplication(tk.Frame):
         self.deck_frame_width = tk.IntVar(self)
         self.deck_frame_width.set(320)
 
+        #possible views
+        self.view_names = ['Player']
+        for idx in range(self.num_bots):
+            self.view_names.append('Bot {}'.format(idx+1))
+        self.view_map = {name:idx for idx,name in enumerate(self.view_names)}
+        self.inv_view_map = {idx:name for idx,name in enumerate(self.view_names)}
+        self.cur_view_name = tk.StringVar(self)
+        self.cur_view_name.set(self.view_names[0]) #initial view on player
+        self.cur_view_idx = tk.IntVar(self)
+        self.cur_view_idx.set(0) #initial view on player
+
         self.menubar = tk.Menu(self)
         filemenu = tk.Menu(self.menubar, tearoff=0)
         filemenu.add_command(
@@ -53,9 +64,14 @@ class MainApplication(tk.Frame):
         )
 
         options_menu = tk.Menu(self.menubar, tearoff=0)
+        view_menu = tk.Menu(self.menubar, tearoff=0)
+        view_menu.add_command(
+            label="View Bot/Player", command=self.popChangeViewMenu
+        )
 
         self.menubar.add_cascade(label="File", menu=filemenu)
         self.menubar.add_cascade(label="Options", menu=options_menu)
+        self.menubar.add_cascade(label="View", menu=view_menu)
         self.root.config(menu=self.menubar)
 
         self.init_main_window()
@@ -141,17 +157,21 @@ class MainApplication(tk.Frame):
         self.start_draft()
     
     def update_display(self):
-        display_text = '''Drafting : {} \n Pack # : {} \n Pick # : {} \n Pass Direction : {} \n   
+        display_text = '''Drafting : {} \n Viewing : {} \n Pack # : {} \n Pick # : {} \n Pass Direction : {} 
                         '''.format(self.mtg_set.get(),
+                                self.cur_view_name.get(),
                                 self.pack_num+1,
                                 self.pick_num+1,
                                 self.pass_direction
                         )
         self.display_label.configure(text=display_text)
-        if np.sum(self.player_deck) ==0:
+
+        cur_view_idx =self.cur_view_idx.get()
+        if np.sum(self.all_decks[cur_view_idx]) ==0:
             self.deck_display.configure(text='No Cards Selected')
         else:
-            deck_str = self.draft_creator.read_pool_picks(self.player_deck)
+
+            deck_str = self.draft_creator.read_pool_picks(self.all_decks[cur_view_idx])
             self.deck_display.configure(text=deck_str)
             return
 
@@ -168,6 +188,10 @@ class MainApplication(tk.Frame):
             self.bot_list.append(nnbot)
 
         self.reset_picks()
+
+        self.all_decks = [self.player_deck]
+        for bot in self.bot_list:
+            self.all_decks.append(bot.picks)
         
         self.pack_num = 0
         self.pick_num = 0
@@ -199,29 +223,40 @@ class MainApplication(tk.Frame):
             self.pack_num+=1
             self.pick_num=0
             if self.pack_num == self.num_packs:
-                self.show_player_cards()
+                self.display_cards()
                 return
 
         if self.pick_num==0:
             self.set_pick_direction()
             self.create_packs()
+        
+        self.all_packs = [self.player_pack,*self.bot_packs]
 
         #bot picks
+        #TODO: track bot picks
+        bot_picks = []
         self.new_bot_packs = [[] for _ in range(self.num_bots)]
         for bot_idx,nnbot in enumerate(self.bot_list):
             pack = self.bot_packs[bot_idx]
-            out_pack = nnbot.pick_and_add(pack)
+            # out_pack = nnbot.pick_and_add(pack)
+
+            card_idx = nnbot.pick(pack)
+            nnbot.add(card_idx)
+            out_pack = pack.tolist()
+            out_pack.remove(card_idx)
+            out_pack.append(-1)
+            out_pack =  np.asarray(out_pack)
+            bot_picks.append(card_idx)
+
             out_bot_idx = bot_idx + self.pass_dir_val
             if out_bot_idx == -1 or out_bot_idx == self.num_bots:
                 self.new_player_pack = out_pack
             else:
                 self.new_bot_packs[out_bot_idx] = out_pack
+        
+        self.all_picks = [None,*bot_picks]
 
-        #set up player pick
-        self.update_display()
-        self.show_player_cards()
-
-    def show_player_cards(self):
+        #player pack 
         card_infos = []
         for card_idx in self.player_pack:
             if card_idx == -1:
@@ -229,12 +264,27 @@ class MainApplication(tk.Frame):
             card_infos.append((card_idx,self.draft_creator.get_info_from_idx(card_idx)))
 
         self.player_card_tuples = sorted(card_infos,key=lambda x: -self.draft_creator.rarity_ordering[x[1]['Rarity']])
+
+        #set up player pick
+        self.update_display()
+        self.display_cards()
+
+    def display_cards(self):
+        cur_view_idx = self.cur_view_idx.get()
+        card_infos = []
+        for card_idx in self.all_packs[cur_view_idx]:
+            if card_idx == -1:
+                continue
+            card_infos.append((card_idx,self.draft_creator.get_info_from_idx(card_idx)))
+
+        card_tuples = sorted(card_infos,key=lambda x: -self.draft_creator.rarity_ordering[x[1]['Rarity']])
+        card_pick = self.all_picks[cur_view_idx]
+
         self.card_photoimages = []
-        for button_idx,_ in enumerate(self.player_card_tuples):
-            if button_idx < len(self.player_card_tuples):
-                card_tuple = self.player_card_tuples[button_idx]
+        for button_idx,_ in enumerate(card_tuples):
+            if button_idx < len(card_tuples):
+                card_tuple = card_tuples[button_idx]
                 card_idx,card_info = card_tuple
-                # print(self.draft_creator.str_from_info(card_info))
 
                 image_path = pjoin(self.set_images_folder,'{:04d}.jpg'.format(card_idx))
                 card_image = Image.open(image_path)
@@ -242,6 +292,9 @@ class MainApplication(tk.Frame):
                                                 (self.card_image_width.get(),
                                                 self.card_image_height.get())
                                             )
+                
+                if card_pick is not None and card_pick == card_idx:
+                    card_image = ImageOps.expand(card_image, border=10, fill=(255,0,255))
                 card_photoimage = ImageTk.PhotoImage(card_image)
                 self.card_buttons[button_idx].config(image=card_photoimage)
                 self.card_photoimages.append(card_photoimage)
@@ -252,12 +305,17 @@ class MainApplication(tk.Frame):
         self.player_deck[card_idx]+=1
 
     def card_click(self,button_idx):
+        if self.cur_view_idx.get() != 0:
+            return
         if button_idx >= len(self.player_card_tuples):
             return
         card_idx,card_info = self.player_card_tuples[button_idx]
         self.add_player_card(card_idx)
 
-        self.player_pack[button_idx] = -1
+        pack = self.player_pack.tolist()
+        pack.remove(card_idx)
+        pack.append(-1)
+        self.player_pack =  np.asarray(pack)
 
         if self.pass_dir_val == -1:
             self.new_bot_packs[self.num_bots-1] = self.player_pack
@@ -277,10 +335,34 @@ class MainApplication(tk.Frame):
         self.newWindow = tk.Toplevel(self.root)
         self.app = newDraftWindow(self.newWindow, self)
 
-    
+    def popChangeViewMenu(self):
+        self.newWindow = tk.Toplevel(self.root)
+        self.app = ChangeView(self.newWindow, self)
+
     def reset(self):
         self.root.update_idletasks()
         return
+
+
+class ChangeView(tk.Frame):
+    def __init__(self, parent, main, *args, **kwargs):
+        tk.Frame.__init__(self, parent, *args, **kwargs)
+        self.parent = parent
+        self.mainApp = main
+        label = tk.Label(self, text="Choose View")
+        label.pack()
+        w = tk.OptionMenu(self, main.cur_view_name, *main.view_names)
+        w.pack()
+        button = tk.Button(self, text="OK", command=self.return_to)
+        button.pack()
+
+        self.pack()
+
+    def return_to(self):
+        self.mainApp.cur_view_idx.set(self.mainApp.view_map[self.mainApp.cur_view_name.get()])
+        self.mainApp.display_cards()
+        self.mainApp.update_display()
+        self.parent.destroy()
 
 class QuitWindow(tk.Frame):
     def __init__(self, parent, main, *args, **kwargs):
