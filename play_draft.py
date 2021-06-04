@@ -1,7 +1,6 @@
 import tkinter as tk
 from PIL import Image, ImageTk,ImageOps
 from set_utils import available_sets,set_metadata_map,images_path
-import os
 from os.path import join as pjoin
 from tkinter.filedialog import askopenfilename
 import keras
@@ -9,7 +8,6 @@ from nn_utils import NNBot
 import numpy as np
 from functools import partial
 import argparse
-from timeit import default_timer as timer
 
 def resize_image(image, maxsize):
     r1 = image.size[0]/maxsize[0] # width ratio
@@ -31,17 +29,23 @@ class MainApplication(tk.Frame):
         self.display_row = 0
         self.num_bots = 7
         self.num_packs = 3
-
+        self.aspect_ratio = 320/244
+        self.init_height = 320
+        self.init_width = self.init_height / self.aspect_ratio
+        
         #Variables
         self.mtg_set = tk.StringVar(self)
         self.mtg_set.set(available_sets[0])
         self.card_image_width = tk.IntVar(self)
-        self.card_image_width.set(244)
+        self.card_image_width.set(self.init_width)
         self.card_image_height = tk.IntVar(self)
-        self.card_image_height.set(320)
+        self.card_image_height.set(self.init_height)
+        self.scale = tk.DoubleVar(self)
+        self.scale.set(1.)
 
         self.deck_frame_width = tk.IntVar(self)
         self.deck_frame_width.set(320)
+
 
         #possible views
         self.view_names = ['Player']
@@ -64,6 +68,10 @@ class MainApplication(tk.Frame):
         )
 
         options_menu = tk.Menu(self.menubar, tearoff=0)
+        options_menu.add_command(
+            label="Change Settings", command=self.popChangeSettingsMenu
+        )
+
         view_menu = tk.Menu(self.menubar, tearoff=0)
         view_menu.add_command(
             label="View Bot/Player", command=self.popChangeViewMenu
@@ -123,6 +131,7 @@ class MainApplication(tk.Frame):
         
         self.set_metadata = set_metadata_map[set_code]
         self.draft_creator = self.set_metadata.load_draft_creator()
+        self.draft_creator.download_images(verbose=1)
         self.set_size = self.draft_creator.get_set_size()
         self.set_images_folder = pjoin(images_path,set_code)
 
@@ -238,14 +247,8 @@ class MainApplication(tk.Frame):
         self.new_bot_packs = [[] for _ in range(self.num_bots)]
         for bot_idx,nnbot in enumerate(self.bot_list):
             pack = self.bot_packs[bot_idx]
-            # out_pack = nnbot.pick_and_add(pack)
+            out_pack,card_idx = nnbot.pick_and_add(pack)
 
-            card_idx = nnbot.pick(pack)
-            nnbot.add(card_idx)
-            out_pack = pack.tolist()
-            out_pack.remove(card_idx)
-            out_pack.append(-1)
-            out_pack =  np.asarray(out_pack)
             bot_picks.append(card_idx)
 
             out_bot_idx = bot_idx + self.pass_dir_val
@@ -339,9 +342,41 @@ class MainApplication(tk.Frame):
         self.newWindow = tk.Toplevel(self.root)
         self.app = ChangeView(self.newWindow, self)
 
+    def popChangeSettingsMenu(self):
+        self.newWindow = tk.Toplevel(self.root)
+        self.app = ChangeSettings(self.newWindow, self)
+
     def reset(self):
         self.root.update_idletasks()
         return
+
+
+class ChangeSettings(tk.Frame):
+    def __init__(self, parent, main, *args, **kwargs):
+        tk.Frame.__init__(self, parent, *args, **kwargs)
+        self.parent = parent
+        self.mainApp = main
+        
+
+        label = tk.Label(self, text="Card Size")
+        label.pack()
+        self.scale_slider = tk.Scale(self,orient='horizontal',
+                                     from_=0.25, to=2.0,
+                                     resolution=0.05)
+        self.scale_slider.set(self.mainApp.scale.get())
+        self.scale_slider.pack()
+        button = tk.Button(self, text="OK", command=self.return_to)
+        button.pack()
+        self.pack()
+
+    def return_to(self):
+        self.mainApp.scale.set(self.scale_slider.get())
+        self.mainApp.card_image_height.set(self.mainApp.scale.get()*self.mainApp.init_height)
+        self.mainApp.card_image_width.set(self.mainApp.scale.get()*self.mainApp.init_width)
+        self.mainApp.apply_options()
+        self.mainApp.display_cards()
+        self.mainApp.update_display()
+        self.parent.destroy()
 
 
 class ChangeView(tk.Frame):

@@ -1,6 +1,3 @@
-
-import pandas as pd
-import pickle
 from nn_utils import NNBot
 import argparse
 import keras
@@ -57,7 +54,7 @@ if __name__ == '__main__':
                 sys.stdout.write('\r >> Pack : {} , Pick {} , Bot {}'.format(pack_num,pick_num,bot_idx))
                 sys.stdout.flush()
                 pack = packs[bot_idx]
-                out_pack = nnbot.pick_and_add(pack)
+                out_pack,_ = nnbot.pick_and_add(pack)
                 out_bot_idx = (bot_idx + dir) %(num_bots)
                 new_packs[out_bot_idx] = out_pack
             packs = new_packs

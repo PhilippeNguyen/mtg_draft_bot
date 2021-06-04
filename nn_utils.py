@@ -63,7 +63,7 @@ class NNBot(object):
         out_pack = pack.tolist()
         out_pack.remove(card_idx)
         out_pack.append(-1)
-        return np.asarray(out_pack)
+        return np.asarray(out_pack),card_idx
 
     def add(self,card_idx):
         self.picks[card_idx]+=1

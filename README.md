@@ -44,14 +44,25 @@ The data can be found here [https://www.17lands.com/public_datasets](https://www
 2 files are the outputs from step 2, 'output_name' is the path to the output hdf5 file that you want to create, this contains the model
 
 ## Playing a Draft Against Bots
-1. Run 'python play_draft.py'
-2. On the top bar, click:  File > New Draft
-3. Choose the set you want to draft, then press OK.
+0. Before running any draft, you'll need to download the card images, this is done by running 'python download_images.py'. It will only need to be done once.
+
+1. Run 'python play_draft.py' 
+2. On the top bar, click:  'File' > 'New Draft'
+3. Choose the set you want to draft, then press OK. (if images have not been downloaded in step 0, this step will download the images, this might take awhile)
 4. Use the file selector to select the model hdf5 file (must correspond to the set chosen in step 3)
 5. Now you should see the cards, left click on one to add it to your deck. The bots will pick their cards and then you move onto your next pick
 
 Here is an example of what it should look like:
 ![Example Image](https://github.com/PhilippeNguyen/mtg_draft_bot/blob/master/assets/play_draft_ex_1.png)
+
+The 'Options' > 'Change Settings' tab will let you change the size of the images.
+The 'View' > 'View Bot/Player' tab will let you view the deck currently drafted by the other bots. You will see the bot picked card highlighted, and the picked card will already be added to the bot's deck on the right hand side. Here is an example:
+
+![Example Image 2](https://github.com/PhilippeNguyen/mtg_draft_bot/blob/master/assets/play_draft_ex_2.png)
+
+
+Note: You can only click on cards when you're in the 'Player' view. So choose the 'Player' view to continue drafting
+Note: For all options windows, be sure to click "OK" to close them. Clicking the "X" on the upper right may cause bugs.
 
 ## Simulating an All Bot Draft
 4. To run a simulation draft, run 'python simulate_draft.py --model_hdf5 {} --set_code {}. 
