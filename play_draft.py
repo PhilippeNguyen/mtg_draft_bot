@@ -27,11 +27,16 @@ class MainApplication(tk.Frame):
         self.black_image_path = pjoin(images_path,'black.jpg')
     
         self.display_row = 0
+        self.canvas_row = 1
+        self.canvas_col = 0
+        self.scrollbar_col = 1
+        self.deck_col = 2
         self.num_bots = 7
         self.num_packs = 3
         self.aspect_ratio = 320/244
         self.init_height = 320
         self.init_width = self.init_height / self.aspect_ratio
+        
         
         #Variables
         self.mtg_set = tk.StringVar(self)
@@ -44,7 +49,7 @@ class MainApplication(tk.Frame):
         self.scale.set(1.)
 
         self.deck_frame_width = tk.IntVar(self)
-        self.deck_frame_width.set(320)
+        self.deck_frame_width.set(self.init_width)
 
 
         #possible views
@@ -127,7 +132,7 @@ class MainApplication(tk.Frame):
             self.num_card_rows.set(3)
             self.num_card_cols = tk.IntVar(self)
             self.num_card_cols.set(5)
-            self.deck_col = 5
+            
         
         self.set_metadata = set_metadata_map[set_code]
         self.draft_creator = self.set_metadata.load_draft_creator()
@@ -147,6 +152,28 @@ class MainApplication(tk.Frame):
         self.deck_display = tk.Label(self.deck_frame, text="~",justify='left')
         self.deck_display.grid()
 
+
+        if hasattr(self,'canvas_scrollbar'):
+            self.canvas_scrollbar.destroy()
+        self.canvas_scrollbar = tk.Scrollbar(self, orient="vertical")
+        self.canvas_scrollbar.grid(row=self.canvas_row,
+                                column=self.scrollbar_col,
+                                sticky='nse')
+
+        if hasattr(self,'canvas'):
+            self.canvas.destroy()
+        self.canvas = tk.Canvas(self,yscrollcommand=self.canvas_scrollbar.set,
+                                width=self.num_card_cols.get()*self.card_image_width.get(),
+                                height=self.num_card_rows.get()*self.card_image_height.get())
+        self.canvas.grid(row=self.canvas_row,
+                    column=self.canvas_col)
+
+        self.canvas_scrollbar.config(command=self.canvas.yview)
+        
+        self.canvas_frame = tk.Frame(self.canvas)
+        self.canvas.create_window((0,0), window=self.canvas_frame, 
+                                  anchor='nw')
+
         if hasattr(self,'card_buttons'):
             for card_button in self.card_buttons:
                 card_button.destroy()
@@ -155,16 +182,17 @@ class MainApplication(tk.Frame):
         card_idx = 0
         for row in range(self.num_card_rows.get()):
             for col in range(self.num_card_cols.get()):
-                card_button = tk.Button(self, image = self.blank_image,
-                                        command=partial(self.card_click,card_idx))
-                card_button.grid(row=row+1,column=col,)
+                card_button = tk.Button(self.canvas_frame, image = self.blank_image,
+                                        command=partial(self.card_click,card_idx),
+                                        )
+                card_button.grid(row=row,column=col,)
                 self.card_buttons.append(card_button)
                 card_idx+=1
         
-        self.display_label.grid(row=self.display_row,column=(self.num_card_cols.get()//2))
+        self.display_label.grid(row=self.display_row,column=self.canvas_col)
 
         self.start_draft()
-    
+
     def update_display(self):
         display_text = '''Drafting : {} \n Viewing : {} \n Pack # : {} \n Pick # : {} \n Pass Direction : {} 
                         '''.format(self.mtg_set.get(),
@@ -272,7 +300,8 @@ class MainApplication(tk.Frame):
         self.update_display()
         self.display_cards()
 
-    def display_cards(self):
+    def display_cards(self):  
+
         cur_view_idx = self.cur_view_idx.get()
         card_infos = []
         for card_idx in self.all_packs[cur_view_idx]:
@@ -303,6 +332,18 @@ class MainApplication(tk.Frame):
                 self.card_photoimages.append(card_photoimage)
             else:
                 self.card_buttons[button_idx].config(image=self.black_image)
+        
+        self.canvas_frame.update_idletasks()
+        min_height = self.root.winfo_screenheight()-self.display_label.winfo_height() -80
+        self.canvas.configure(
+                                width=min(self.root.winfo_screenwidth(),
+                                            self.num_card_cols.get()*self.card_image_width.get()),
+                                height=min(min_height,
+                                        self.num_card_rows.get()*self.card_image_height.get()),
+                                )
+        
+        self.canvas.configure(scrollregion=self.canvas_frame.bbox("all"))
+        
 
     def add_player_card(self,card_idx):
         self.player_deck[card_idx]+=1
