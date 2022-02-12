@@ -4,7 +4,7 @@ Code for training and running a simple neural network bot which will draft Magic
 
 The model I use in this repo is similar to the neural network model in the paper [https://arxiv.org/abs/2009.00655](https://arxiv.org/abs/2009.00655). I use tensorflow-keras model instead of pytorch.
 
-Currently supported sets: M19 and STX, will add more more sets if data for those sets becomes available.
+Currently supported sets: M19,STX,AFR,MID and VOW, will add more more sets if data for those sets becomes available.
 
 ## Requirements
 The versions are not hard requirements. They are just what I use.
@@ -15,7 +15,7 @@ The versions are not hard requirements. They are just what I use.
 * Pillow==5.4.1
 
 ## Setting Up the Data & Training the Bots
-Since the M19 data (from draftsim) and the STX data (from 17Lands) are formatted differently, the procedure for each of them will be slightly different.
+Since the M19 data (from draftsim) and the STX/AFR/MID/VOW data (from 17Lands) are formatted differently, the procedure for each of them will be slightly different.
 
 ### Pre-Trained Models
 Here are some pre-trained models, if you want to skip the training steps below.
@@ -26,6 +26,12 @@ Here are some pre-trained models, if you want to skip the training steps below.
 
 [STX Traditional Draft Model](https://drive.google.com/file/d/1BQUt-MEi-SBYziPUu0MvhfE-HEtxAuIF/view?usp=sharing)
 
+[AFR Premier Draft Model](https://drive.google.com/file/d/1E3TogWl61kDjq_FtqPj-yZijFIBCpque/view?usp=sharing)
+
+[MID Premier Draft Model](https://drive.google.com/file/d/1Ik5LEBuLi9MXyUvkdcuDzEOIt47nrVMM/view?usp=sharing)
+
+[VOW Premier Draft Model](https://drive.google.com/file/d/1h1wK7fVNIaS1y87Leaj3v-Dx0Pb9lmrH/view?usp=sharing)
+
 ### Draftsim Data (M19)
 Download data found here [https://draftsim.com/draft-data/](https://draftsim.com/draft-data/)
 
@@ -35,7 +41,7 @@ Download data found here [https://draftsim.com/draft-data/](https://draftsim.com
 3. run  'python train_nn.py --train_pkl {} --test_pkl {} --output_name {}' . The first 
 2 files are the outputs from step 2, 'output_name' is the path to the output hdf5 file that you want to create, this contains the model
 
-### 17Lands Data (STX)
+### 17Lands Data (STX/AFR/MID/VOW, will use STX as an example)
 The data can be found here [https://www.17lands.com/public_datasets](https://www.17lands.com/public_datasets). You can use either the 'STX Premier Draft Data' or the 'STX Traditional Draft Data'; this data is collected from the draft process. (Do not use 'STX Traditional/Premier Draft Game Data', which is data from the games played)
 1. Unzip the data downloaded above, in here will be a 'data_csv' which will be used in the next step
 2. run 'python create_17lands_draft_data.py --data_csv {path_to_data_csv}'. This might take awhile as it preprocesses the data.
